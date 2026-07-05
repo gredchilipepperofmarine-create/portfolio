@@ -1,0 +1,20 @@
+body {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+canvas {
+  border: 4px solid #fff;
+}
+.scoreArea {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
