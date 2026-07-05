@@ -1,0 +1,349 @@
+body {
+  font-family: "Black Ops One", "Dela Gothic One", sans-serif;
+  /* font-family: "Black Ops One", system-ui; */
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgba(0, 255, 255, .8);
+  background: linear-gradient(rgba(0, 255, 255, .8) 0%, rgba(91, 234, 253, 0.4));
+  /* color: #000; */
+  text-shadow: 0 5px 5px rgba(61, 60, 60, .7);
+  position: relative;
+  /* overflow: hidden; */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  margin-bottom: 300px;
+}
+.headerText {
+  margin-bottom: 70px;
+}
+h1 {
+  color: #000;
+  text-shadow: 0 10px 5px #3d3c3c;
+  font-size: clamp(40px, 6vw, 80px);
+}
+h1.welcome {
+  margin: 30px 0 10px 0;
+}
+h1.portfolio {
+  margin: 10px 0 20px 0;
+}
+header ul.headerList {
+  display: inline-block;
+  text-align: left;
+  /* border: 7px solid; */
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 5px 5px 5px #3d3c3c;
+  margin-bottom: 0;
+  padding-right: 1rem;
+}
+nav.headerNav li {
+  color: #000;
+  font-weight: bold;
+  text-shadow: 0 5px 5px #3d3c3c;
+  transform: translateY(0);
+  /* position: relative; */
+  font-size: clamp(14px, 6vw, 30px);
+  margin: 15px;
+}
+nav.headerNav li button {
+  text-shadow: 0 5px 5px #3d3c3c;
+}
+.creatsList {
+  position: relative;
+  z-index: 1000;
+}
+nav.headerNav li a {
+  display: inline-block;
+}
+nav.headerNav li::before {
+  content: "";
+  left: -50px;
+  top: 40%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill='hsl(0, 0%, 0%)' d='M441.3 299.8C451.5 312.4 450.8 330.9 439.1 342.6L311.1 470.6C301.9 479.8 288.2 482.5 276.2 477.5C264.2 472.5 256.5 460.9 256.5 448L256.5 192C256.5 179.1 264.3 167.4 276.3 162.4C288.3 157.4 302 160.2 311.2 169.3L439.2 297.3L441.4 299.7z'/></svg>");
+  fill: #3d3c3c;
+  filter: drop-shadow(0 10px 5px);
+  opacity: 0;
+}
+.wrap {
+  position: relative;
+}
+ .overlay.open {
+  background-color: rgba(0, 0, 0, .5);
+  visibility: visible;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+ }
+ .subList, .overlay {
+  visibility: hidden;
+  display: none;
+ }
+ul.subList.open {
+  /* border: 7px solid; */
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px #3d3c3c;
+  width: 340px;
+  visibility: visible;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.creatsList:has(.subList.open) .creates {
+  text-shadow: 0 5px 5px #3d3c3c;
+  transform: translateY(0);
+}
+/* .introduction {
+  height: 300px;
+} */
+.toTopScroll {
+  width: 100px;
+  height: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity, .5s;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  padding: 0;
+  font-size: 24px;
+  animation: bounce .5s infinite alternate steps(1);
+  z-index: 100;
+}
+.toTopScroll.open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity, .5s;
+}
+.toTopScroll img{
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+}
+.inner {
+  /* border: 7px solid; */
+  border-radius: 15px;
+  background-color: rgba(61, 60, 60, .2);
+  min-width: 310px;
+  text-align: justify;
+  padding: 10px;
+}
+ul.skills li {
+  font-size: 20px;
+}
+h2 {
+  text-align: left;
+  font-size: clamp(25px, 6vw, 40px);
+}
+h3 {
+  font-size: clamp(20px, 8vw, 50px);
+}
+p.intro {
+  font-size: clamp(20px, 6vw, 25px);
+  margin: 10px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+.outWrap {
+  /* padding-top: 50px; */
+  padding-bottom: 20px;
+  margin-top: 500px;
+  margin-bottom: 500px;
+  /* border: 7px solid; */
+  border-radius: 25px;
+  box-shadow: 5px 5px 8px #3d3c3c;
+}
+.innerCol {
+  border: 2px solid rgba(61, 60, 60, .3);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #3d3c3c;
+  transform: translateY(0);
+  padding: 10px;
+}
+.innerCol img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.innerP {
+  font-size: clamp(8px, 5vw, 12px);
+}
+.innerCol p {
+  text-shadow: none;
+  font-size: clamp(9px, 5vw, 13px);
+  text-align: justify;
+}
+footer {
+  background: url(../images/mapBottomCenter.png) repeat center/100px auto;
+  animation: groundMove 1.143s linear infinite;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  position: relative;
+}
+
+/* サイト下部*/
+.toTopArea {
+  position: relative;
+}
+.toTopInner {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  z-index: 100;
+}
+.toTopInner a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  animation: bounce .5s infinite alternate steps(1);
+}
+.toTopInner a span {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.toTopInner img {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+}
+.moveArea {
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.riverObjects {
+  display: flex;
+  overflow: hidden;
+  height: 250px;
+}
+ul.riverObjects {
+  position: absolute;
+  margin-bottom: 0;
+  width: 100%;
+  bottom: 100px;
+}
+.riverObjects li {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+}
+.riverObjects img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+  animation: river 20s linear infinite;
+  animation-delay: calc(var(--i) * 3s);
+}
+/* サイト下部各イラスト配置 */
+li.isWolf {
+  width: 50px;
+}
+li.isCloudSm {
+  width: 40px;
+  height: auto;
+  bottom: 120px;
+}
+li.isCloudLg {
+  width: 50px;
+  bottom: 70px;
+}
+li.isCastle {
+  width: 115px;
+  bottom: -8px;
+}
+li.isMashroomYellow {
+  width: 40px;
+}
+li.isSun {
+  width: 40px;
+  height: auto;
+  bottom: 210px;
+}
+
+/* hoverとactiveまとめ */
+@media (hover: hover) and (pointer: fine){
+  nav.headerNav li:hover::before{
+    opacity: 1;
+  }
+  nav.headerNav li:hover > a,
+  nav.headerNav li:hover > button {
+    text-shadow: 0 10px 7px #3d3c3c;
+    transform: translateY(-5px);
+  }
+  nav.headerNav li:active > a{
+    text-shadow: 0 1px 5px #3d3c3c;
+    transform: translateY(0);
+  }
+  .hoverClass:hover > .innerCol {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px rgba(61, 60, 60, .9);
+  }
+  .hoverClass:active > .innerCol {
+    transform: translateY(0);
+    box-shadow: 5px 5px 5px rgba(61, 60, 60, .9);
+  }
+  /* .toTopScroll:hover::before {
+    content: "";
+    background: url(../images/fukidashi.png) no-repeat center/100%;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 25%;
+    right: 5%;
+    pointer-events: none;
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+  } */
+}
+
+/* アニメーション */
+@keyframes river {
+  0% {
+    transform: translateX(-150px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1600px);
+    opacity: 1;
+  }
+}
+@keyframes groundMove {
+  0% {
+  background-position-x: 0;
+  }
+  100% {
+  background-position-x: 100px;
+  }
+}
+@keyframes bounce {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(2px);}
+}
+
+@media screen and (max-width: 375px) {
+  .outWrap {
+    max-width: 300px;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .innerCol {
+    max-width: 250px;
+    margin-inline: auto;
+  }
+}
