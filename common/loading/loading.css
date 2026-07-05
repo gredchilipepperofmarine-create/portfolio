@@ -1,0 +1,190 @@
+
+/* イントロ最後の文章表示関係 */
+.isHide {
+  visibility: hidden;
+  display: none;
+}
+.textArea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100vh;
+  animation: fadeIn 2s forwards;
+}
+.textArea p {
+  padding: 50px;
+  text-align: center;
+  font-size: clamp(12px, 6vw, 32px);
+}
+.textArea p span {
+  font-size: clamp(8px, 6vw, 16px);
+}
+
+/* 最初の宝箱をクリックしたときの動作関係 */
+/* きれいにサイトへ行く効果 */
+.imgArea button img.openBoxAction {
+  animation: big 1s forwards; 
+}
+.imgArea.openIntro {
+  animation:
+   openIntro 2s ease-in-out forwards;
+  pointer-events: none;
+}
+.imgArea button img.openBoxAction {
+  animation: big 1s forwards; 
+}
+
+
+/* .imgArea button img.openBoxAction {
+  animation: big 1ms forwards; 
+} */
+.openBtn {
+  opacity: 1;
+  transform: scale(1);
+}
+.delete {
+  display: none;
+  visibility: hidden;
+}
+
+/* ふわっと消えるアニメーション関係 */
+.frontArea {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+ }
+.loadArea {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  opacity: 1;
+  background-color: aqua;
+}
+.loaded {
+  pointer-events: none;
+  opacity: 1;
+  animation: fadeOut 3s forwards;
+}
+.imgArea {
+  width: 100px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.imgArea button img {
+  display: inline-block;
+  width: 90%;
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+  opacity: 1;
+  transform: translate(0, 0) rotate(0);
+  animation: willOpen 5s infinite;
+}
+.fukidashiArea::before {
+  display: inline-block;
+  content: "";
+  background: url(../../images/fukidashiManga.png) no-repeat center/100%;
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  top: 30%;
+  left: 48%;
+  transform: translate(-50%, -50%)  rotate(0);
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
+  animation: deg 1s infinite alternate steps(2);
+}
+.loadArea p.clickMe,
+.loadArea p.areYouReady {
+  position: absolute;
+  top: 26%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  width: 300px;
+  text-align: center;
+  animation: deg 1s infinite alternate steps(2);
+}
+.loadArea p.areYouReady {
+  visibility: hidden;
+}
+.loadArea:has(button.imgBtn:hover) p.clickMe {
+  visibility: hidden;
+}
+.loadArea:has(button.imgBtn:hover) p.areYouReady {
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  0%, 20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes willOpen {
+  0%, 3%, 20%, 27%, 50%, 53%, 85%, 90%, 100% {
+    transform-origin: bottom;
+    transform: translate(0, 0) rotate(0);
+  }
+  1%, 21%, 23%,25%, 51%, 86%, 88% {
+    transform: translate(5px, -5px) rotate(-5deg);
+  }
+  2%, 22%, 24%, 26%, 52%, 87%, 89% {
+    transform: translate(-5px, -5px) rotate(5deg);
+  }
+}
+@keyframes shine {
+  0%, 30%, 100% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.7;
+  }
+}
+@keyframes deg {
+  0% {
+  transform: translate(-50%, -50%)  rotate(-5deg);
+  }
+  100% {
+  transform: translate(-20%, -50%)  rotate(45deg);
+  }
+}
+@keyframes big {
+  0% {
+    transform: scale(1.5);
+    /* opacity: 1; */
+  }
+  90%, 100% {
+    transform: scale(1);
+    /* opacity: 0; */
+  }
+}
+@keyframes openIntro {
+  0%, 45% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 70%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+}
