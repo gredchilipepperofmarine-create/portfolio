@@ -1,0 +1,320 @@
+@charset "utf-8";
+body {
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+main {
+    text-align: center;
+}
+main img {
+    filter: drop-shadow(4px 4px 4px);
+}
+.innerWrap {
+    margin: 250px auto;
+    padding: 80px 20px;
+    background-color: white;
+}
+.topWrap {
+    padding-top: 60px;
+}
+main h3 {
+    width: 100%;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-top: -100px;
+    padding-top: 60px;
+    color: red;
+}
+main h3 span {
+    font-size: 15px;
+    margin-left: 10px ;
+}
+header .innerWrap {
+    height: 1000px;
+    position: relative;
+}
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 20px 0px 7px 6px #fff;
+    z-index: 100;
+    color: red;
+}
+header .innerWrap ul {
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 15px 0px 9px;
+    text-transform: uppercase;
+}
+header .innerWrap ul li {
+    border: 2px solid ;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px red;
+}
+header .innerWrap li a {
+    display: block;
+    padding: 10px;
+}
+header .innerWrap nav ul li:active {
+    box-shadow: unset;
+    transform: translate(2px,2px);
+}
+h1 {
+    font-size: 37px;
+    letter-spacing: .1em;
+    line-height: 3;
+    text-align: center;
+}
+h1 span {
+    background-color: rgba(255,255,0,0.5);
+    border-radius: 25px;
+}
+header .topWrap {
+    margin-bottom: 100px;
+}
+.innerWrap .messageWrap h2 {
+    text-align: center;
+}
+.mode .wrapMsg p {
+    line-height: 3;
+    font-size: 22px;
+    padding-top: 20px;
+}
+.none {
+    font-family: serif;
+    color: black;
+    font-size: 15px;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+.goods .boxes img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.mode {
+    border-radius: 25px;
+    padding: 0 25px 80px;
+    box-shadow: 0 0 20px 12px rgba(250,235,215,0.5);
+    background-color: rgba(250,235,215,0.5);
+    position: relative;
+}
+main .form .contactform{
+    width: 500px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: red;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid black;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+.btn {
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px;
+}
+.btn:active {
+    box-shadow: unset;
+    transform: translate(2px,2px);
+}
+.form h3 {
+    margin-bottom: 100px;
+}
+main .form .contactform p {
+    margin-bottom: 30px;
+}
+footer {
+    background-color: rgb(243, 83, 8);
+    text-align: center;
+    height: 50px;
+    font-style: inherit;
+}
+footer p {
+    font-family: serif;
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+}
+/*グリッド&グリッド内設定*/
+.goodsGarelly {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 230px 50px 230px 50px 230px 50px;
+    grid-template-columns: 33% 33% 33%;
+}
+.item01 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.item01+p {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.item02 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.item02+p {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.item03 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.item03+p {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.item04 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.item04+p {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+.item05{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.item05+p {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.item06 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.item06+p{
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+.item07 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+.item07+p{
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+.item08 {
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+.item08+p {
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+.item09 {
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+.item09+p {
+    grid-row: 6/7;
+    grid-column: 3/4;
+}
+.goodsGarelly li img {
+    width: 50%;
+    height: 50%;
+}
+/*各mode内画像への適用まとめ*/
+.img1 {
+    position: absolute;
+    left: 80px;
+    bottom: 354px;
+    width: 15%;
+}
+.img2 {
+    position: absolute;
+    right: 20px;
+    top: -80px;
+    width: 23%;
+}
+.mode .goodsInfo img {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.goodsInfo p {
+    color: red;
+    border: 2px solid;
+    background-color: #fff;
+    border-radius: 25px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+.goodsInfo .images a {
+    width: 100%;
+    height: auto;
+    margin: 0 20px;
+}
+.goodsInfo a img:hover {
+    filter: drop-shadow(0 0 20px gold);
+}
+/*おすすめ　アイテム/アドバイス　画像整理*/
+.goodsInfo ul {
+    display: flex;
+    justify-content: center;
+}
+.goodsInfo li img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.goodsInfo li {
+    flex-basis: 15%;
+}
+/*最背面の画像設定*/
+.Wrap::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/Chodoii/sun_color.png) no-repeat center/cover;
+    z-index: -1;
+}
+/*以下keyframes*/
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes turn {
+    0% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
