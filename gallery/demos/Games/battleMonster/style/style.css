@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.hidden {
+  display: none;
+}
+section {
+  border: 1px solid;
+  height: 150px;
+  margin: 20px auto;
+  width: 80vw;
+}
+.statusSec {
+  display: flex;
+}
+.charaStatus {
+  border: 1px solid;
+  width: 25vw;
+  text-align: center;
+  margin: 0 auto;
+}
+.enemyStatus {
+  border: 1px solid;
+  width: 25vw;
+  text-align: center;
+  margin-right: 0;
+
+}
+.bottom {
+  display: flex;
+}
+.msgSec {
+  position: relative;
+  align-items: center;
+  width: 1000px;
+  border: 1px solid;
+  text-align: center;
+}
+.btnSec {
+  width: 250px;
+  border: 1px solid;
+}
+.btnSec ul {
+  text-align: center;
+}
+.btnSec li {
+  display: block;
+  margin: 5px;
+  border: 1px solid;
+}
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border-top: 20px solid black;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  width: 0;
+  height: 0;
+}
+.arrow:hover {
+  transform: scale(0.9);
+}
+.arrow:active {
+  transform: scale(0.8);
+}
