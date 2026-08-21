@@ -1,0 +1,9 @@
+.progress {
+  text-align: center;
+  width: 70%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+

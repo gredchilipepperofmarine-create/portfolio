@@ -1,0 +1,39 @@
+/* skills下、タブ調整 */
+.listArea ul {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 10px;
+  position: relative;
+  z-index: var(--z-tubs);
+}
+.listArea ul li {
+  height: 50px;
+  margin-bottom: 0;
+}
+.listArea ul li button {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(61, 60, 60, .2);
+  border-radius: 10px 10px 0 0;
+  border: 1px solid rgba(61, 60, 60, .3);
+  cursor: pointer;
+}
+.isHide {
+  visibility: hidden;
+  display: none;
+}
+.tubInner {
+  border-radius: 10px;
+  background-color: rgba(61, 60, 60, .2);
+  min-width: 310px;
+  text-align: justify;
+}
+.listArea ul li button.isOpen {
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+  font-size: 20px;
+}
+
+

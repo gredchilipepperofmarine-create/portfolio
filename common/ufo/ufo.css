@@ -1,0 +1,31 @@
+/* ufoアニメーション管理 */
+
+/* 表示エリア */
+.ufoArea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* pointer-events: none; */
+  z-index:   var(--z-ufoArea);
+}
+/* 画面内動き回り */
+.ufoArea img {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  transition: transform 3s ease-out;
+  pointer-events: auto;
+}
+.ufoFontArea {
+  visibility: hidden;
+  opacity: 0;
+}
+.ufoFontArea.fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 5s;
+}
