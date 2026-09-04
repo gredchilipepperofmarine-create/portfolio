@@ -9,14 +9,24 @@
             Tech Note
           </span>
         </div>
-        <p class="lh-sm mb-0 text-start">
-          <strong>
-          GitHub API連携でリポジトリ内の言語使用率(バイト数)を自動計算し、プログレスバー(作品詳細内)で表示。表示崩れ防止のため2重の対策を行っています。
-          </strong>
-          <br>1.通信エラーの場合にはローカルストレージから情報を取得
-          <br>2.タイムスタンプ機能を利用して最初の通信から24時間以内はローカルストレージから情報を取得
+        <p class="lh-sm mb-3 text-start fw-bold text-dark fs-6">
+          GitHub API連携でリポジトリ内の言語使用率(バイト数)を取得し、JavaScriptで自動計算してプログレスバー(作品詳細内)に表示。
         </p>
+        <div class="bg-white border rounded-2 p-2 shadow-sm">
+          <div class="small fw-bold mb-1 border-bottom pb-1">
+            <i class="bi bi-shield-check me-1 text-success"></i>表示崩れ防止の2重対策
+          </div>
+          <p class="mb-1 small text-body-secondary d-flex align-items-top">
+            <span class="badge bg-secondary me-2 align-self-start mt-1">1</span>
+            <span>通信エラーの場合にはローカルストレージから情報を取得</span>
+          </p>
+          <p class="mb-0 small text-body-secondary d-flex align-items-top">
+            <span class="badge bg-secondary me-2 align-self-start mt-1">2</span>
+            <span>タイムスタンプ機能を利用して最初の通信から24時間以内はローカルストレージから情報を取得</span>
+          </p>
+        </div>
       </div>
+
       <!--  RPG Battle System  -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">
@@ -371,20 +381,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

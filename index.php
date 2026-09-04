@@ -51,15 +51,16 @@ error_reporting(E_ALL);
                 <ul class="headerList">
                   <li><a href="#introduction">About Me</a></li>
                   <li><a href="#introduction">Skills</a></li>
-                  <li class="creatsList">
-                    <button type="button" id="creates" class="creates">Creates</button>
+                  <li class="creatsList"><a href="#creates">Creates</a>
+                    <!-- 自作モーダル -->
+                    <!-- <button type="button" id="creates" class="creates">Creates</button>
                     <ul class="subList">
                       <li><a href="#RPG">Game: RPG</a></li>
                       <li><a href="#shooting">Game: Shooting</a></li>
                       <li><a href="#demoHps">Demo HP's</a></li>
-                    </ul>
+                    </ul> -->
                   </li>
-                  <li><a href="#conntact">Contact</a></li>
+                  <li><a href="#technotes">Tech Notes</a></li>
                 </ul>
               </nav>
             </div>
@@ -124,20 +125,20 @@ error_reporting(E_ALL);
               </div>
             </div>
           </div>
-          <div class="container text-center">
+          <div class="container text-center" id="technotes">
             <div class="row">
               <div class="col-12 tubArea">
-                <h2>本サイト制作における使用</h2>
+                <h2 class="techArea">Tech Notes</h2>
                 <div class="listArea">
                   <ul class="tubs">
-                    <li><button type="button" class="tubBtn isOpen" data-btn=".htmlArea">HTML</button></li>
-                    <li><button type="button" class="tubBtn" data-btn=".cssArea">CSS</button></li>
-                    <li><button type="button" class="tubBtn" data-btn=".jsArea">Javascript</button></li>
-                    <li><button type="button" class="tubBtn" data-btn=".phpArea">PHP</button></li>
+                    <li><button type="button" class="tubBtn isOpen" data-btn=".note1">Note1</button></li>
+                    <li><button type="button" class="tubBtn" data-btn=".cssArea">Note2</button></li>
+                    <li><button type="button" class="tubBtn" data-btn=".jsArea">Note3</button></li>
+                    <li><button type="button" class="tubBtn" data-btn=".phpArea">Note4</button></li>
                   </ul>
                 </div>
               </div>
-              <div class="col-12 tub htmlArea">
+              <div class="col-12 tub note1">
                 <div class="tubInner">
                   <ul class="skills">
                     <li>Bootstrapを使用してベース作成</li>
@@ -179,23 +180,21 @@ error_reporting(E_ALL);
             </div>
           </div>
 
+          <!-- 「体験する」起動ボタン -->
+          <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
+            <i class="bi bi-play-circle-fill me-2"></i>体験する
+          </button>
+          <!-- 入力モーダル -->
+          <?php require 'common/creates/add_mordal.php'; ?>
+
           <!-- 制作実績エリア -->
+          <div id="creates"></div>
           <?php require 'common/getLang/getLang.php'; ?>
 
-          <div class="container text-center">
+          <!-- <div class="container text-center">
             <div class="outWrap px-4 bg-white bg-opacity-75" id="conntact">
               <div class="row mx-auto">
-                <div class="col-12">
                   <h3>Contact</h3>
-                </div>
-                <div class="col-md-6">
-                  <ul class="idArea">
-                    <li>GitHub:</li>
-                    <li><a href="#">ここにID</a></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
                   <ul class="containerList">
                     <li>Name:</li>
                     <li><input type="text" name="userName"></li>
@@ -204,11 +203,10 @@ error_reporting(E_ALL);
                     <li>Message:</li>
                     <li><input type="textarea" name="userMessage"></li>
                   </ul>
-                  <p></p>
-                </div>
               </div>
             </div>
-          </div>
+          </div> -->
+
           <div class="toTopArea">
             <div class="toTopInner">
               <a href="#">
@@ -239,7 +237,8 @@ error_reporting(E_ALL);
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <script src="script/script.js"></script>
+    <!-- 自作モーダル -->
+    <!-- <script src="script/script.js"></script> -->
     <script src="common/createImages/createImages.js"></script>
     <script src="common/toTopScroll/toTopScroll.js"></script>
     <script src="common/loading/loading.js"></script>
