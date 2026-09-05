@@ -21,9 +21,9 @@
               
               <div class="card border border-secondary-subtle rounded-3 shadow-sm">
                 
-                <!-- 【STEP 1】入力画面フォーム -->
-                <div id="stepInput" class="card-body p-4">
-                  <form id="workForm">
+                <form id="workForm">
+                  <!-- 【STEP 1】入力画面フォーム -->
+                  <div id="stepInput" class="card-body p-4">
                     <!-- カテゴリー選択 -->
                     <div class="mb-3 text-start">
                       <label class="form-label fw-bold small text-secondary">category</label>
@@ -46,7 +46,6 @@
                       <label class="form-label fw-bold small text-secondary">説明文</label>
                       <textarea id="inputDescription" name="description" class="form-control" rows="3" placeholder="モーダル内の説明文を入力"></textarea>
                     </div>
-
                     <!-- 制作時間 -->
                     <div class="mb-3 text-start">
                       <label class="form-label fw-bold small text-secondary">制作時間</label>
@@ -117,9 +116,8 @@
                       </div>
                     </div>
 
-                  </form>
-                </div>
-
+                  </div>
+                </form>
               </div>
 
             </div>
