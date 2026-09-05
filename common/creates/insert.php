@@ -7,8 +7,5 @@ $_POST['title'],
 $_POST['description'],
 $_POST['dev_time']
 ]);
-
-header('Location: ../../index.php');
-exit;
+echo json_encode(['result' => $sql]);
 ?>
-

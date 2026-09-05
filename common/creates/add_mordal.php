@@ -25,7 +25,7 @@
               <div class="card border border-secondary-subtle rounded-3 shadow-sm">
                 <div class="card-body p-4">
                   
-                  <form action="common/creates/add_confirm.php" method="post">
+                  <form id="confirmForm" action="common/creates/add_confirm.php" method="post">
                     <!-- カテゴリー選択 -->
                     <div class="mb-3 text-start">
                       <label class="form-label fw-bold small text-secondary">category</label>
