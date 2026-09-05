@@ -1,8 +1,9 @@
 const confirmForm = document.getElementById('confirmForm');
 const stepConfirm = document.getElementById('stepConfirm');
+const confirmBtn = document.getElementById('confirmBtn');
 
-stepConfirm.addEventListener('click', (e) => {
-  e.currentTarget.remove('d-none');
+confirmBtn.addEventListener('click', () => {
+  stepConfirm.classList.remove('d-none');
 })
 
 confirmForm.addEventListener('submit', (e) => {

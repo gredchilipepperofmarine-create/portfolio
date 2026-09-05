@@ -14,9 +14,6 @@
       <!-- モーダルボディ -->
       <div class="modal-body p-2 p-md-4">
         
-        <?php
-        $category=$title=$description=$dev_time='';
-        ?>
 
         <div class="container my-2 d-flex justify-content-center">
           <div class="row w-100 justify-content-center">
@@ -61,70 +58,9 @@
 
                     <!-- 確認画面へ進むボタン -->
                     <div class="d-grid gap-2 mt-4">
-                      <button type="button" id="btnToConfirm" class="btn btn-primary fw-bold py-2 shadow-sm">
+                      <button id="confirmBtn" type="button" id="btnToConfirm" class="btn btn-primary fw-bold py-2 shadow-sm">
                         確認画面へ進む <i class="bi bi-arrow-right ms-1"></i>
                       </button>
-                    </div>
-                  </form>
-                </div>
-
-                <!-- 【STEP 2】確認画面 (初期表示は d-none で非表示) -->
-                <div id="stepConfirm" class="card-body p-4 d-none">
-                  <div class="text-start mb-3">
-                    <p class="small text-secondary mb-0">以下の内容で登録します。よろしければ「登録する」を押してください。</p>
-                  </div>
-
-                  <!-- 入力内容表示エリア -->
-                  <div class="bg-body-tertiary rounded-3 p-3 mb-4 text-start border border-light-subtle">
-                    <!-- カテゴリー -->
-                    <div class="mb-3 border-bottom pb-2">
-                      <div class="text-secondary small fw-bold mb-1">category</div>
-                      <div id="confirmCategory" class="fw-semibold text-dark fs-6"></div>
-                    </div>
-
-                    <!-- リポジトリ名 -->
-                    <div class="mb-3 border-bottom pb-2">
-                      <div class="text-secondary small fw-bold mb-1">リポジトリ名</div>
-                      <div id="confirmTitle" class="fw-semibold text-dark fs-6"></div>
-                    </div>
-
-                    <!-- 説明文 -->
-                    <div class="mb-3 border-bottom pb-2">
-                      <div class="text-secondary small fw-bold mb-1">説明文</div>
-                      <div id="confirmDescription" class="text-dark fs-6 text-break lh-sm"></div>
-                    </div>
-
-                    <!-- 制作時間 -->
-                    <div class="mb-1">
-                      <div class="text-secondary small fw-bold mb-1">制作時間</div>
-                      <div class="fw-semibold text-dark fs-6">
-                        <span id="confirmDevTime">0</span> 時間
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- 最終送信フォーム -->
-                  <form id="confirmForm" action="common/creates/add_confirm.php" method="post">
-                    <!-- POST送信用 hiddenフィールド -->
-                    <input type="hidden" name="category" id="hiddenCategory">
-                    <input type="hidden" name="title" id="hiddenTitle">
-                    <input type="hidden" name="description" id="hiddenDescription">
-                    <input type="hidden" name="dev_time" id="hiddenDevTime">
-
-                    <div class="row g-2">
-                      <!-- 修正する（入力画面へ戻る）ボタン -->
-                      <div class="col-6">
-                        <button type="button" id="btnBackToInput" class="btn btn-outline-secondary w-100 fw-bold py-2">
-                          <i class="bi bi-arrow-left me-1"></i>修正する
-                        </button>
-                      </div>
-
-                      <!-- 最終送信ボタン -->
-                      <div class="col-6">
-                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm">
-                          登録する
-                        </button>
-                      </div>
                     </div>
                   </form>
                 </div>
@@ -136,6 +72,14 @@
         </div>
 
       </div>
+
+      <!-- モーダルフッター -->
+      <div class="modal-footer border-top-0 pt-0 pb-4 px-4 justify-content-center">
+        <button type="button" class="btn btn-outline-secondary px-4 fw-bold rounded-2" data-bs-dismiss="modal">
+          <i class="bi bi-x-lg me-1"></i>閉じる
+        </button>
+      </div>
+
     </div>
   </div>
 </div>
