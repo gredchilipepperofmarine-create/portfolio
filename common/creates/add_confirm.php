@@ -51,10 +51,10 @@ $dev_time    = $_POST['dev_time'] ?? '';
   <!-- 最終送信フォーム (insert.php へPOST送信) -->
   <form id="confirmForm" action="insert.php" method="post">
     <!-- POST送信用 hiddenフィールド -->
-    <input type="hidden" name="category" id="hiddenCategory" value="<?= h($category) ?>">
+    <!-- <input type="hidden" name="category" id="hiddenCategory" value="<?= h($category) ?>">
     <input type="hidden" name="title" id="hiddenTitle" value="<?= h($title) ?>">
     <input type="hidden" name="description" id="hiddenDescription" value="<?= h($description) ?>">
-    <input type="hidden" name="dev_time" id="hiddenDevTime" value="<?= h($dev_time) ?>">
+    <input type="hidden" name="dev_time" id="hiddenDevTime" value="<?= h($dev_time) ?>"> -->
 
     <div class="row g-2">
       <!-- 前のページに戻る（修正する）ボタン：JS制御でロードを挟まず戻る -->

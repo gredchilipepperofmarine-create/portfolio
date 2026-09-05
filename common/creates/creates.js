@@ -1,10 +1,17 @@
 const confirmForm = document.getElementById('confirmForm');
 const stepConfirm = document.getElementById('stepConfirm');
-const confirmBtn = document.getElementById('confirmBtn');
+const btnToConfirm = document.getElementById('btnToConfirm');
+const workForm = document.getElementById('workForm');
 
-confirmBtn.addEventListener('click', () => {
+btnToConfirm.addEventListener('click', () => {
   stepConfirm.classList.remove('d-none');
 })
+
+const repoData = Object.fromEntries(new FormData(workForm));
+
+let repoDataBox = {
+  category: repoData.category
+}
 
 confirmForm.addEventListener('submit', (e) => {
   // 標準機能でページ遷移するのを止める

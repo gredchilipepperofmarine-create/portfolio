@@ -58,10 +58,65 @@
 
                     <!-- 確認画面へ進むボタン -->
                     <div class="d-grid gap-2 mt-4">
-                      <button id="confirmBtn" type="button" id="btnToConfirm" class="btn btn-primary fw-bold py-2 shadow-sm">
+                      <button type="button" id="btnToConfirm" class="btn btn-primary fw-bold py-2 shadow-sm">
                         確認画面へ進む <i class="bi bi-arrow-right ms-1"></i>
                       </button>
                     </div>
+
+
+                    <!-- 【STEP 2】確認画面 (confirm) -->
+                    <div id="stepConfirm" class="card-body p-4 d-none">
+                      <div class="text-start mb-3">
+                        <p class="small text-secondary mb-0">以下の内容で登録します。よろしければ「登録する」を押してください。</p>
+                      </div>
+
+                      <!-- 入力内容表示エリア -->
+                      <div class="bg-body-tertiary rounded-3 p-3 mb-4 text-start border border-light-subtle">
+                        <!-- カテゴリー -->
+                        <div class="mb-3 border-bottom pb-2">
+                          <div class="text-secondary small fw-bold mb-1">category</div>
+                          <div id="confirmCategory" class="fw-semibold text-dark fs-6"><?= h($category) ?></div>
+                        </div>
+
+                        <!-- リポジトリ名 -->
+                        <div class="mb-3 border-bottom pb-2">
+                          <div class="text-secondary small fw-bold mb-1">リポジトリ名</div>
+                          <div id="confirmTitle" class="fw-semibold text-dark fs-6"><?= h($title) ?></div>
+                        </div>
+
+                        <!-- 説明文 -->
+                        <div class="mb-3 border-bottom pb-2">
+                          <div class="text-secondary small fw-bold mb-1">説明文</div>
+                          <div id="confirmDescription" class="text-dark fs-6 text-break lh-sm"><?= h($description) ?></div>
+                        </div>
+
+                        <!-- 制作時間 -->
+                        <div class="mb-1">
+                          <div class="text-secondary small fw-bold mb-1">制作時間</div>
+                          <div class="fw-semibold text-dark fs-6">
+                            <span id="confirmDevTime"><?= h($dev_time) ?></span> 時間
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 最終送信フォーム (insert.php へPOST送信) -->
+                      <div class="row g-2">
+                        <!-- 前のページに戻る（修正する）ボタン：JS制御でロードを挟まず戻る -->
+                        <div class="col-6">
+                          <button type="button" id="btnBackToInput" class="btn btn-outline-secondary w-100 fw-bold py-2">
+                            <i class="bi bi-arrow-left me-1"></i>修正する
+                          </button>
+                        </div>
+
+                        <!-- 登録実行ボタン -->
+                        <div id="confirmForm" class="col-6">
+                          <button type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm">
+                            登録する
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
                   </form>
                 </div>
 
