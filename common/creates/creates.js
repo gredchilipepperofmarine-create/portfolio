@@ -1,4 +1,9 @@
 const confirmForm = document.getElementById('confirmForm');
+const stepConfirm = document.getElementById('stepConfirm');
+
+stepConfirm.addEventListener('click', (e) => {
+  e.currentTarget.remove('d-none');
+})
 
 confirmForm.addEventListener('submit', (e) => {
   // 標準機能でページ遷移するのを止める
