@@ -28,12 +28,9 @@ confirmForm.addEventListener('submit', (e) => {
   // 標準機能でページ遷移するのを止める
   e.preventDefault();
 
-  console.log(repoDataBox);
-  const confirmFormData = new FormData();
-  confirmFormData.append('category', repoDataBox.category);
-  confirmFormData.append('title', repoDataBox.title);
-  confirmFormData.append('description', repoDataBox.description);
-  confirmFormData.append('dev_time', repoDataBox.dev_time);
+  // 送信するための空の箱を定義
+  const confirmFormData = new FormData(confirmForm);
+
   // php呼び出し
   fetch('common/creates/insert.php',{
     method: 'POST',
