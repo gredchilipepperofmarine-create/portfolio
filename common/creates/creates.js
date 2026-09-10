@@ -34,6 +34,11 @@ confirmForm.addEventListener('submit', (e) => {
   // 標準機能でページ遷移するのを止める
   e.preventDefault();
 
+  stepConfirm.classList.add('d-none');
+  document.getElementById('stepInput').classList.remove('d-none');
+
+  workForm.reset();
+
   console.log(repoDataBox);
   const confirmFormData = new FormData();
   confirmFormData.append('category', repoDataBox.category);

@@ -2,31 +2,30 @@
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content rounded-4 border-0 shadow-lg">
       
-      <!-- モーダルヘッダー（ステップに応じてJSでタイトルを変更） -->
+      <!-- モーダルヘッダー -->
       <div class="modal-header border-bottom-0 pb-0 pt-4 px-4">
         <h5 class="modal-title fw-bold text-dark fs-5" id="experienceModalLabel">
           <i class="bi bi-pencil-square text-primary me-2"></i><span id="modalHeaderTitle">作品登録フォーム</span>
         </h5>
-        <!-- ヘッダーの閉じるボタン (x) -->
+        <!-- 閉じるボタン (x) -->
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
       </div>
 
       <!-- モーダルボディ -->
       <div class="modal-body p-2 p-md-4">
         
-
         <div class="container my-2 d-flex justify-content-center">
           <div class="row w-100 justify-content-center">
             <div class="col-12 col-md-10 col-lg-8">
               
               <div class="card border border-secondary-subtle rounded-3 shadow-sm">
                 
-                <!-- 【STEP 1】入力画面フォーム -->
+                <!-- 入力画面フォーム -->
                 <div id="stepInput" class="card-body p-4">
                   <form id="workForm">
                     <!-- カテゴリー選択 -->
                     <div class="mb-3 text-start">
-                      <label class="form-label fw-bold small text-secondary">category</label>
+                      <label class="form-label fw-bold small text-secondary">カテゴリー</label>
                       <select id="inputCategory" name="category" class="form-select">
                         <option value="" selected disabled>--選択してください--</option>
                         <option value="Game">Game</option>
@@ -65,7 +64,7 @@
                   </form>
                 </div>
 
-                <!-- 【STEP 2】確認画面 (confirm) -->
+                <!-- 確認画面 -->
                 <div id="stepConfirm" class="card-body p-4 d-none">
                   <div class="text-start mb-3">
                     <p class="small text-secondary mb-0">以下の内容で登録します。よろしければ「登録する」を押してください。</p>
@@ -75,7 +74,7 @@
                   <div class="bg-body-tertiary rounded-3 p-3 mb-4 text-start border border-light-subtle">
                     <!-- カテゴリー -->
                     <div class="mb-3 border-bottom pb-2">
-                      <div class="text-secondary small fw-bold mb-1">category</div>
+                      <div class="text-secondary small fw-bold mb-1">カテゴリー</div>
                       <div id="confirmCategory" class="fw-semibold text-dark fs-6"></div>
                     </div>
 
@@ -100,19 +99,19 @@
                     </div>
                   </div>
 
-                  <!-- 最終送信フォーム (insert.php へPOST送信) -->
+                  <!-- 最終送信フォーム -->
                   <form id="confirmForm" >
                     <div class="row g-2">
-                      <!-- 前のページに戻る（修正する）ボタン：JS制御でロードを挟まず戻る -->
+                      <!-- 修正する -->
                       <div class="col-6">
                         <button type="button" id="btnBackToInput" class="btn btn-outline-secondary w-100 fw-bold py-2">
                           <i class="bi bi-arrow-left me-1"></i>修正する
                         </button>
                       </div>
 
-                      <!-- 登録実行ボタン -->
-                      <div class="col-6">
-                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm">
+                      <!-- 登録実行 -->
+                      <div class="col-6" data-bs-dismiss="modal">
+                        <button id="registeredBtn" type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm">
                           登録する
                         </button>
                       </div>
@@ -128,11 +127,11 @@
       </div>
 
       <!-- モーダルフッター -->
-      <div class="modal-footer border-top-0 pt-0 pb-4 px-4 justify-content-center">
+      <!-- <div class="modal-footer border-top-0 pt-0 pb-4 px-4 justify-content-center">
         <button type="button" class="btn btn-outline-secondary px-4 fw-bold rounded-2" data-bs-dismiss="modal">
           <i class="bi bi-x-lg me-1"></i>閉じる
         </button>
-      </div>
+      </div> -->
 
     </div>
   </div>
