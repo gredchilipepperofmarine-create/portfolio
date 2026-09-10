@@ -4,43 +4,36 @@
       <div class="row g-4 align-items-stretch">
         
         <div class="col-12 col-md-7 col-lg-8">
-          <div class="p-4 p-md-4 rounded-3 h-100 d-flex flex-column justify-content-between">
-            <div>
-              <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモ</span>
-              <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">DB登録システム</h5>
-              
-              <div class="mb-3">
-                <p class="text-secondary lh-lg mb-0">
-                  PHP演習の復習として制作実績をDB管理に変更し、DB登録体験として「さわれる仕組み」を構築しました。
-                  登録された情報はDB接続を通して反映されます。
-                  <br><small class="text-muted">※１件のみ登録可能。以降は上書きされます</small>
-                </p>
-              </div>
-
-              <!-- ボタンエリア -->
-              <div class="row g-3 mt-2 text-center">
-                <div class="col-12">
-
-                  <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
-                    <i class="bi bi-play-circle-fill me-2"></i>体験する
-                  </button>
-                </div>
-                <div class="col-sm-6">
-
-                  <!-- <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
-                    <i class="bi bi-play-circle-fill me-2"></i>削除する
-                  </button> -->
-                </div>
-              </div>
-
-
-
+          <div>
+            <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモ</span>
+            <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">DB登録システム</h5>
+            
+            <div class="mb-3">
+              <p class="lh-lg mb-0">
+                PHP演習成果確認のため制作実績をDB管理に変更し、DB登録体験として「さわれる仕組み」を構築しました。
+                登録された情報はDB接続を通して反映されます。
+                <br><small class="text-muted">※１件のみ登録可能。以降は上書きされます</small>
+              </p>
             </div>
 
-            <!-- 下部メッセージ -->
-            <div class="pt-3 mt-3 border-top text-start">
-              <small class="text-muted">※体験用のDBを使用。登録から24hでDBから削除されます</small>
+            <!-- ボタンエリア -->
+            <div class="row g-3 mt-2 text-center">
+              <div class="col-12">
+
+                <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
+                  <i class="bi bi-play-circle-fill me-2"></i>体験する
+                </button>
+              </div>
+              <div class="col-sm-6">
+
+              </div>
             </div>
+
+          </div>
+
+          <!-- 下部メッセージ -->
+          <div class="pt-3 mt-3 border-top text-start">
+            <small class="text-muted">※体験用のDBを使用。登録から24hでDBから削除されます</small>
           </div>
         </div>
 
