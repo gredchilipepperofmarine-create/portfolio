@@ -1,44 +1,72 @@
 <div class="row g-4 justify-content-center text-start">
-  <h4 class="fw-bold text-dark">DB登録システム</h4>
-  <div class="p-2 mt-2 bg-light rounded-2">
-    <div class="techArea mb-1 d-flex align-items-center gap-1 fw-bold">
-      <span style="background: linear-gradient(transparent 65%, rgba(255, 220, 0, 0.6) 65%);">
-        Tech Note
-      </span>
-    </div>
-    <p class="lh-sm mb-3 text-start fw-bold text-dark fs-6">
-      GitHub API連携でリポジトリ内の言語使用率(バイト数)を取得し、JavaScriptで自動計算してプログレスバー(作品詳細内)に表示。
-    </p>
-    <div class="bg-white border rounded-2 p-2 shadow-sm">
-      <div class="small fw-bold mb-1 border-bottom pb-1">
-        <i class="bi bi-shield-check me-1 text-success"></i>表示崩れ防止の2重対策
+  <div class="col-12">
+    <div class="p-4 p-md-5 bg-light rounded-4 shadow-sm border">
+      
+      <div class="d-flex align-items-center mb-4 pb-2">
+        <h4 class="fw-bold text-dark m-0">DB登録システム</h4>
       </div>
-      <p class="mb-1 small text-body-secondary d-flex align-items-top">
-        <span class="badge bg-secondary me-2 align-self-start mt-1">1</span>
-        <span>通信エラーの場合にはローカルストレージから情報を取得</span>
-      </p>
-      <p class="mb-0 small text-body-secondary d-flex align-items-top">
-        <span class="badge bg-secondary me-2 align-self-start mt-1">2</span>
-        <span>タイムスタンプ機能を利用して最初の通信から24時間以内はローカルストレージから情報を取得</span>
-      </p>
-    </div>
-  </div>
 
-  <!--  RPG Battle System  -->
-  <div class="col-12 col-md-6 col-lg-4">
-    <div class="card-hover-wrapper h-100">
-      <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-rpg">
-        <img src="images/battle.png" class="card-img-top img-fluid rounded-top-3" alt="RPG Demo Pic" onerror="this.src='https://placehold.co/600x350/e2e8f0/475569?text=RPG+Battle+System'">
-        <div class="card-body p-3 p-md-4 w-100">
-          <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">Game</span>
-          <h5 class="card-title fw-bold text-dark mb-3">RPG Battle System</h5>
-          <p>使用言語</p>
-          <div id="RPGLangDetail" class="barCharaArea"></div>
+      <div class="row g-4 align-items-stretch">
+        
+        <div class="col-12 col-md-7 col-lg-8">
+          <div class="bg-white p-4 p-md-4 rounded-3 shadow-sm border h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">システム詳細・説明</h5>
+              
+              <div class="mb-3">
+                <p class="text-secondary lh-lg mb-0">
+                  テストあああああああああああああああああああああああああああああああああああああ
+                </p>
+              </div>
+
+              <!-- ボタンエリア -->
+              <div class="row g-3 mt-2 text-center">
+                <div class="col-sm-6">
+
+                  <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
+                    <i class="bi bi-play-circle-fill me-2"></i>体験する
+                  </button>
+                </div>
+                <div class="col-sm-6">
+
+                  <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
+                    <i class="bi bi-play-circle-fill me-2"></i>削除する
+                  </button>
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <!-- 下部メッセージ -->
+            <div class="pt-3 mt-3 border-top text-end">
+              <small class="text-muted">※カードをクリックすると詳細ダイアログが開きます</small>
+            </div>
+          </div>
         </div>
-      </button>
+
+        <!-- 左側カラム：RPG Battle System カード (PCで4列分 / タブレットで5列分) -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="card-hover-wrapper h-100">
+            <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3 overflow-hidden" data-bs-toggle="modal" data-bs-target="#modal-rpg">
+              <img src="images/battle.png" class="card-img-top img-fluid rounded-top-3" alt="RPG Demo Pic" onerror="this.src='https://placehold.co/600x350/e2e8f0/475569?text=RPG+Battle+System'">
+              <div class="card-body p-3 p-md-4 w-100 bg-white">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">Game</span>
+                <h5 class="card-title fw-bold text-dark mb-3">RPG Battle System</h5>
+                <p class="text-muted small mb-1">使用言語</p>
+                <div class="barCharaArea"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+
     </div>
   </div>
-
 </div>
 
 <!-- モーダルエリア -->
@@ -54,8 +82,8 @@
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
             <img src="images/battle.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="RPG" onerror="this.src='https://placehold.co/600x350/e2e8f0/475569?text=RPG+Battle+System'">
-            <div id="RPG" class="languageBar mt-2 mb-2"></div>
-            <div id="RPGLang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
+            <div class="languageBar mt-2 mb-2"></div>
+            <div class="langCharaArea row row-cols-2 g-2 m-0"></div>
           </div>
           <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
             <div>

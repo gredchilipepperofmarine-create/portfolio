@@ -180,11 +180,6 @@ error_reporting(E_ALL);
             </div>
           </div>
 
-          <!-- 「体験する」起動ボタン -->
-          <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
-            <i class="bi bi-play-circle-fill me-2"></i>体験する
-          </button>
-
           <!-- 入力モーダル -->
           <?php require 'common/creates/add_mordal.php'; ?>
 
@@ -192,22 +187,7 @@ error_reporting(E_ALL);
           <div id="creates"></div>
           <?php require 'common/getLang/getLang.php'; ?>
 
-          <!-- <div class="container text-center">
-            <div class="outWrap px-4 bg-white bg-opacity-75" id="conntact">
-              <div class="row mx-auto">
-                  <h3>Contact</h3>
-                  <ul class="containerList">
-                    <li>Name:</li>
-                    <li><input type="text" name="userName"></li>
-                    <li>E-mail:</li>
-                    <li><input type="email" name="userName"></li>
-                    <li>Message:</li>
-                    <li><input type="textarea" name="userMessage"></li>
-                  </ul>
-              </div>
-            </div>
-          </div> -->
-
+          <!-- TOPへ戻るボタン -->
           <div class="toTopArea">
             <div class="toTopInner">
               <a href="#">
@@ -218,6 +198,7 @@ error_reporting(E_ALL);
           </div>
         </div>
       </main>
+      
       <footer>
         <div class="moveArea">
           <ul class="riverObjects">
