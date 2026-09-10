@@ -27,6 +27,8 @@
         </div>
       </div>
 
+    <?php require 'common/creates/add_result.php'; ?>
+
       <!--  RPG Battle System  -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">

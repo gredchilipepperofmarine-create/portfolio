@@ -184,6 +184,7 @@ error_reporting(E_ALL);
           <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
             <i class="bi bi-play-circle-fill me-2"></i>体験する
           </button>
+
           <!-- 入力モーダル -->
           <?php require 'common/creates/add_mordal.php'; ?>
 
