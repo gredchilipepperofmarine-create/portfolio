@@ -27,13 +27,13 @@
         </div>
       </div>
 
-    <?php require 'common/creates/add_result.php'; ?>
+    <?php require 'common/creates/db_system.php'; ?>
 
       <!--  RPG Battle System  -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">
           <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-rpg">
-            <img src="images/battle.png" class="card-img-top img-fluid rounded-top-3" alt="RPG Demo Pic" onerror="this.src='https://placehold.co/600x350/e2e8f0/475569?text=RPG+Battle+System'">
+            <img src="images/battle.png" class="card-img-top img-fluid rounded-top-3" alt="RPG Demo Pic">
             <div class="card-body p-3 p-md-4 w-100">
               <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">Game</span>
               <h5 class="card-title fw-bold text-dark mb-3">RPG Battle System</h5>
@@ -48,7 +48,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">
           <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-shooting">
-            <img src="images/shooting.png" class="card-img-top img-fluid rounded-top-3" alt="Shooting Demo Pic" onerror="this.src='https://placehold.co/600x350/e2e8f0/475569?text=Shooting+Game'">
+            <img src="images/shooting.png" class="card-img-top img-fluid rounded-top-3" alt="Shooting Demo Pic">
             <div class="card-body p-3 p-md-4 w-100">
               <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">Game</span>
               <h5 class="card-title fw-bold text-dark mb-3">Shooting Game</h5>
@@ -63,7 +63,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">
           <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-howtodrive">
-            <img src="images/howToDrive.png" class="card-img-top img-fluid rounded-top-3" alt="How To Drive Demo Pic" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=How+To+Drive%3F'">
+            <img src="images/howToDrive.png" class="card-img-top img-fluid rounded-top-3" alt="How To Drive Demo Pic">
             <div class="card-body p-3 p-md-4 w-100">
               <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
               <h5 class="card-title fw-bold text-dark mb-3">How To Drive? (デモ)</h5>
@@ -78,7 +78,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">
           <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-movie">
-            <img src="images/movie.png" class="card-img-top img-fluid rounded-top-3" alt="Movie Demo Pic" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=新作映画+(デモ)'">
+            <img src="images/movie.png" class="card-img-top img-fluid rounded-top-3" alt="Movie Demo Pic">
             <div class="card-body p-3 p-md-4 w-100">
               <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
               <h5 class="card-title fw-bold text-dark mb-3">新作映画 (デモ)</h5>
@@ -93,7 +93,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">
           <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-lesson">
-            <img src="images/lesson.png" class="card-img-top img-fluid rounded-top-3" alt="Lesson Demo Pic" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=HTML%2FCSS個人製作'">
+            <img src="images/lesson.png" class="card-img-top img-fluid rounded-top-3" alt="Lesson Demo Pic">
             <div class="card-body p-3 p-md-4 w-100">
               <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
               <h5 class="card-title fw-bold text-dark mb-3">HTML/CSS個人製作課題</h5>
@@ -108,7 +108,7 @@
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card-hover-wrapper h-100">
           <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-donuts">
-            <img src="images/donuts.png" class="card-img-top img-fluid rounded-top-3" alt="PHP Demo Pic" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=C.C.Donuts+(PHP)'">
+            <img src="images/donuts.png" class="card-img-top img-fluid rounded-top-3" alt="PHP Demo Pic">
             <div class="card-body p-3 p-md-4 w-100">
               <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
               <h5 class="card-title fw-bold text-dark mb-3">PHP個人製作課題 (C.C.Donuts)</h5>
@@ -135,7 +135,7 @@
       <div class="modal-body p-4">
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
-            <img src="images/battle.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="RPG" onerror="this.src='https://placehold.co/600x350/e2e8f0/475569?text=RPG+Battle+System'">
+            <img src="images/battle.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="RPG">
             <div id="RPG" class="languageBar mt-2 mb-2"></div>
             <div id="RPGLang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
           </div>
@@ -179,7 +179,7 @@
       <div class="modal-body p-4">
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
-            <img src="images/shooting.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Shooting" onerror="this.src='https://placehold.co/600x350/e2e8f0/475569?text=Shooting+Game'">
+            <img src="images/shooting.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Shooting">
             <div id="STG" class="languageBar mt-2 mb-2"></div>
             <div id="STGLang" class="langCharaArea row row-cols-2 m-0"></div>
           </div>
@@ -223,7 +223,7 @@
       <div class="modal-body p-4">
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
-            <img src="images/howToDrive.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="How To Drive" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=How+To+Drive%3F'">
+            <img src="images/howToDrive.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="How To Drive">
             <div id="HowToDrive" class="languageBar mt-2 mb-2"></div>
             <div id="HowToDriveLang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
           </div>
@@ -266,7 +266,7 @@
       <div class="modal-body p-4">
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
-            <img src="images/movie.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Movie" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=新作映画+(デモ)'">
+            <img src="images/movie.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Movie">
             <div id="Movie" class="languageBar mt-2 mb-2"></div>
             <div id="MovieLang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
           </div>
@@ -309,7 +309,7 @@
       <div class="modal-body p-4">
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
-            <img src="images/lesson.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Lesson" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=HTML%2FCSS個人製作'">
+            <img src="images/lesson.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Lesson">
             <div id="DesignHouseRenovation" class="languageBar mt-2 mb-2"></div>
             <div id="DesignHouseRenovationLang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
           </div>
@@ -352,7 +352,7 @@
       <div class="modal-body p-4">
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
-            <img src="images/donuts.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Donuts" onerror="this.src='https://placehold.co/600x350/e0f2fe/0369a1?text=C.C.Donuts+(PHP)'">
+            <img src="images/donuts.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="Donuts">
             <div id="ccdonuts" class="languageBar mt-2 mb-2"></div>
             <div id="ccdonutsLang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
           </div>
