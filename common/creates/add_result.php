@@ -1,27 +1,25 @@
-<div class="row g-4 justify-content-center text-start">
   <div class="col-12">
     <div class="p-4 p-md-5 bg-light rounded-4 shadow-sm border">
       
-      <div class="d-flex align-items-center mb-4 pb-2">
-        <h4 class="fw-bold text-dark m-0">DB登録システム</h4>
-      </div>
-
       <div class="row g-4 align-items-stretch">
         
         <div class="col-12 col-md-7 col-lg-8">
-          <div class="bg-white p-4 p-md-4 rounded-3 shadow-sm border h-100 d-flex flex-column justify-content-between">
+          <div class="p-4 p-md-4 rounded-3 h-100 d-flex flex-column justify-content-between">
             <div>
-              <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">システム詳細・説明</h5>
+              <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモ</span>
+              <h5 class="fw-bold text-dark mb-3 border-bottom pb-2">DB登録システム</h5>
               
               <div class="mb-3">
                 <p class="text-secondary lh-lg mb-0">
-                  テストあああああああああああああああああああああああああああああああああああああ
+                  PHP演習の復習として制作実績をDB管理に変更し、DB登録体験として「さわれる仕組み」を構築しました。
+                  登録された情報はDB接続を通して反映されます。
+                  <br><small class="text-muted">※１件のみ登録可能。以降は上書きされます</small>
                 </p>
               </div>
 
               <!-- ボタンエリア -->
               <div class="row g-3 mt-2 text-center">
-                <div class="col-sm-6">
+                <div class="col-12">
 
                   <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
                     <i class="bi bi-play-circle-fill me-2"></i>体験する
@@ -29,9 +27,9 @@
                 </div>
                 <div class="col-sm-6">
 
-                  <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
+                  <!-- <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
                     <i class="bi bi-play-circle-fill me-2"></i>削除する
-                  </button>
+                  </button> -->
                 </div>
               </div>
 
@@ -40,8 +38,8 @@
             </div>
 
             <!-- 下部メッセージ -->
-            <div class="pt-3 mt-3 border-top text-end">
-              <small class="text-muted">※カードをクリックすると詳細ダイアログが開きます</small>
+            <div class="pt-3 mt-3 border-top text-start">
+              <small class="text-muted">※体験用のDBを使用。登録から24hでDBから削除されます</small>
             </div>
           </div>
         </div>
@@ -67,7 +65,6 @@
 
     </div>
   </div>
-</div>
 
 <!-- モーダルエリア -->
 <!-- RPG -->
