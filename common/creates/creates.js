@@ -57,7 +57,7 @@ confirmForm.addEventListener('submit', (e) => {
     return response.json();
   })
   .then(data => {
-    console.log(`呼び出しと取得はOK: ${data.result}`);
+    console.log(data);
   })
   
 })

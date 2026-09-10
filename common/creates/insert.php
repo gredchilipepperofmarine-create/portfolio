@@ -1,11 +1,15 @@
 <?php
 require_once (__DIR__ . '/../../includes/portfolioDb.php');
 $sql = $pdo->prepare('INSERT INTO creates (category, title, description, dev_time) VALUES (?,?,?,?)');
-$result = $sql->execute([
+$sql->execute([
   $_POST['category'],
   $_POST['title'],
   $_POST['description'],
   $_POST['dev_time']
 ]);
+$get_sql = $pdo->prepare('SELECT * FROM creates WHERE id = 1');
+$get_sql->execute();
+$result = $get_sql->fetch(PDO::FETCH_ASSOC);
+console.log($result);
 echo json_encode(['result' => $result]);
 ?>
