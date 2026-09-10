@@ -2,12 +2,11 @@
 <?php
 // XSS対策用ヘルパー関数
 if (!function_exists('h')) {
-    function h($str) {
-        return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8');
-    }
+  function h($str) {
+    return htmlspecialchars($str ?? '', ENT_QUOTES, 'UTF-8');
+  }
 }
 
-// POST値の受け取り（未初期化警告を防ぐナル合体演算子）
 $category    = $_POST['category'] ?? '';
 $title       = $_POST['title'] ?? '';
 $description = $_POST['description'] ?? '';

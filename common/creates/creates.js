@@ -1,12 +1,14 @@
 const confirmForm = document.getElementById('confirmForm');
 const stepConfirm = document.getElementById('stepConfirm');
 const btnToConfirm = document.getElementById('btnToConfirm');
+const btnBackToInput = document.getElementById('btnBackToInput');
 const workForm = document.getElementById('workForm');
 
 let repoDataBox = {}
 
 btnToConfirm.addEventListener('click', () => {
   stepConfirm.classList.remove('d-none');
+  document.getElementById('stepInput').classList.add('d-none');
 
   const repoData = Object.fromEntries(new FormData(workForm));
 
@@ -20,7 +22,11 @@ btnToConfirm.addEventListener('click', () => {
   document.getElementById('confirmTitle').textContent = repoDataBox.title;
   document.getElementById('confirmDescription').textContent = repoDataBox.description;
   document.getElementById('confirmDevTime').textContent = repoDataBox.dev_time;
+})
 
+btnBackToInput.addEventListener('click', () => {
+  stepConfirm.classList.add('d-none');
+  document.getElementById('stepInput').classList.remove('d-none');
 })
 
 
@@ -50,22 +56,3 @@ confirmForm.addEventListener('submit', (e) => {
   })
   
 })
-
-
-
-// get_creates.phpの下部
-// <?php foreach($data_all as $product): ?>
-//   <div class="container text-center py-3">
-//     <div style="border: 1px solid #E6CCB2;">
-//       <div><?= $product['id'] ?></div>
-//       <div><?= $product['category'] ?></div>
-//       <div><?= $product['title'] ?></div>
-//       <div><?= $product['description'] ?></div>
-//       <div><?= $product['dev_time'] ?></div>
-//       <div><?= $product['is_guest'] ?></div>
-//       <div><?= $product['created_at'] ?></div>
-//     </div>
-//   </div>
-
-
-// <?php endforeach; ?>
