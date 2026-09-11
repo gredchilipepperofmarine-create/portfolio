@@ -57,7 +57,8 @@ confirmForm.addEventListener('submit', (e) => {
     return response.json();
   })
   .then(data => {
-    console.log(data);
+    console.log(data);/*この状態だと配列 */
+    console.log(data[0].category);/*この状態だと個別*/
   })
   
 })
