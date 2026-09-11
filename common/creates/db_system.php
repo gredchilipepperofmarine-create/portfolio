@@ -77,20 +77,17 @@
           </div>
           <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
             <div id="mordalArea">
-              <p class="mb-2"><strong>制作時間：</strong> 22h</p>
-              <p class="mb-2"><strong>対応端末：</strong> ※PCのみ動作</p>
-              <p class="mb-2"><strong>制作概要：</strong> Javascript演習開始直後の自主制作ゲーム1。エンカウントと戦闘ロジックを実装 <small class="text-muted"><br>※制作補助としてAIを使用</small><br><small class="text-muted">※戦闘画面はAIでデザイン</small></p>
-              <p class="mb-2"><strong>工夫した点：</strong><br>
-                <span class="text-danger fw-bold">戦闘画面を基礎的なJavascriptで記述後、STGのロジックを応用してキャラクターの移動とエンカウント判定に使用</span>
-              </p>
+              <p class="mb-2"><strong>制作時間：</strong> ※ここに「入力した制作時間」が反映されます</p>
+              <p class="mb-2"><strong>作品概要：</strong> ※ここに「入力した作品概要」が反映されます</p>
             </div>
             <hr class="my-3">
+            <small class="text-muted mb-2">※制作補助としてAIを使用</small>
             <div class="d-flex flex-column flex-sm-row flex-md-column flex-lg-row gap-2">
-              <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-light border shadow-sm d-inline-flex align-items-center justify-content-center gap-2 rounded-3 px-3 py-2 flex-fill text-dark text-decoration-none">
+              <button type="button" target="_blank" rel="noopener noreferrer" class="btn btn-light border shadow-sm d-inline-flex align-items-center justify-content-center gap-2 rounded-3 px-3 py-2 flex-fill text-dark text-decoration-none">
                 <img src="images/GitHub_Invertocat_Black.png" alt="GitHub Logo" style="height: 20px; width: auto;">
                 <span class="fw-bold">コードを見る</span>
               </a>
-              <a href="" target="_blank" class="btn btn-primary rounded-3 px-3 py-2 flex-fill d-inline-flex align-items-center justify-content-center">
+              <button type="button" target="_blank" class="btn btn-primary rounded-3 px-3 py-2 flex-fill d-inline-flex align-items-center justify-content-center">
                 作品をプレイする
               </a>
               <button type="button" class="btn btn-secondary rounded-3 px-3 py-2 flex-fill" data-bs-dismiss="modal">
