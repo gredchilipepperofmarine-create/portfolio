@@ -46,7 +46,6 @@ const getLang = (targetRepo, targetLang, targetLangDetail) => {
         data: data
       }
 
-
       localStorage.setItem(storageKey, JSON.stringify(cachedData));
 
       draw(data);

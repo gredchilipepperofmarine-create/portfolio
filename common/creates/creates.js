@@ -76,10 +76,6 @@ const cardArea = (title) => {
 const mordalTimeDes = (devTime, description) => {
   return `
       <p class="mb-2"><strong>制作時間：</strong> ${devTime}h</p>
-      <p class="mb-2"><strong>対応端末：</strong> ※PCのみ動作</p>
       <p class="mb-2"><strong>制作概要：</strong> ${description}</p>
-      <p class="mb-2"><strong>工夫した点：</strong><br>
-        <span class="text-danger fw-bold">戦闘画面を基礎的なJavascriptで記述後、STGのロジックを応用してキャラクターの移動とエンカウント判定に使用</span>
-      </p>
   `
 }
