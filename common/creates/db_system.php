@@ -23,6 +23,7 @@
                 <button type="button" class="btn btn-primary btn-lg px-4 py-2 rounded-3 fw-bold shadow-sm" data-bs-toggle="modal" data-bs-target="#experienceModal">
                   <i class="bi bi-play-circle-fill me-2"></i>体験する
                 </button>
+
               </div>
               <div class="col-sm-6">
 
@@ -37,13 +38,13 @@
           </div>
         </div>
 
-        <!-- 左側カラム：RPG Battle System カード (PCで4列分 / タブレットで5列分) -->
-        <div class="col-12 col-md-5 col-lg-4">
+        <!-- 左側カラム -->
+        <div id="currentData" class="col-12 col-md-5 col-lg-4">
           <div class="card-hover-wrapper h-100">
             <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3 overflow-hidden" data-bs-toggle="modal" data-bs-target="#modal-rpg">
               <img src="images/demoPicCat.png" class="card-img-top img-fluid rounded-top-3" alt="Demo Pic">
               <div class="card-body p-3 p-md-4 w-100 bg-white">
-                <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">Game</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3"></span>
                 <h5 class="card-title fw-bold text-dark mb-3">Demo</h5>
                 <p class="text-muted small mb-1">使用言語</p>
                 <div class="barCharaArea"></div>
@@ -60,8 +61,8 @@
   </div>
 
 <!-- モーダルエリア -->
-<!-- RPG -->
-<div class="modal fade" id="modal-rpg" tabindex="-1" aria-hidden="true">
+<!-- DEMO -->
+<div class="modal fade" id="modal-demo" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content text-start rounded-4 border-0 shadow-custom">
       <div class="modal-header border-bottom-0 pb-0">
@@ -72,8 +73,8 @@
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
             <img src="" class="img-fluid rounded-3 w-100 shadow-sm" alt="Demo Pic">
-            <div class="languageBar mt-2 mb-2"></div>
-            <div class="langCharaArea row row-cols-2 g-2 m-0"></div>
+            <div class=" mt-2 mb-2"></div>
+            <div class=" row row-cols-2 g-2 m-0"></div>
           </div>
           <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
             <div>
@@ -86,7 +87,7 @@
             </div>
             <hr class="my-3">
             <div class="d-flex flex-column flex-sm-row flex-md-column flex-lg-row gap-2">
-              <a href="https://github.com/gredchilipepperofmarine-create/RPG.git" target="_blank" rel="noopener noreferrer" class="btn btn-light border shadow-sm d-inline-flex align-items-center justify-content-center gap-2 rounded-3 px-3 py-2 flex-fill text-dark text-decoration-none">
+              <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-light border shadow-sm d-inline-flex align-items-center justify-content-center gap-2 rounded-3 px-3 py-2 flex-fill text-dark text-decoration-none">
                 <img src="images/GitHub_Invertocat_Black.png" alt="GitHub Logo" style="height: 20px; width: auto;">
                 <span class="fw-bold">コードを見る</span>
               </a>
