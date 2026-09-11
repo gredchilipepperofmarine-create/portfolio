@@ -16,82 +16,7 @@
               <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">Game</span>
               <h5 class="card-title fw-bold text-dark mb-3">RPG Battle System</h5>
               <p>使用言語</p>
-              <div id="RPGLangDetail" class="barCharaArea"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      <!--  Shooting Game  -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card-hover-wrapper h-100">
-          <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-shooting">
-            <img src="images/shooting.png" class="card-img-top img-fluid rounded-top-3" alt="Shooting Demo Pic">
-            <div class="card-body p-3 p-md-4 w-100">
-              <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">Game</span>
-              <h5 class="card-title fw-bold text-dark mb-3">Shooting Game</h5>
-              <p>使用言語</p>
-              <div id="STGLangDetail" class="barCharaArea"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      <!--  How To Drive?  -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card-hover-wrapper h-100">
-          <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-howtodrive">
-            <img src="images/howToDrive.png" class="card-img-top img-fluid rounded-top-3" alt="How To Drive Demo Pic">
-            <div class="card-body p-3 p-md-4 w-100">
-              <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
-              <h5 class="card-title fw-bold text-dark mb-3">How To Drive? (デモ)</h5>
-              <p>使用言語</p>
-              <div id="HowToDriveLangDetail" class="barCharaArea"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      <!--  新作映画  -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card-hover-wrapper h-100">
-          <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-movie">
-            <img src="images/movie.png" class="card-img-top img-fluid rounded-top-3" alt="Movie Demo Pic">
-            <div class="card-body p-3 p-md-4 w-100">
-              <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
-              <h5 class="card-title fw-bold text-dark mb-3">新作映画 (デモ)</h5>
-              <p>使用言語</p>
-              <div id="MovieLangDetail" class="barCharaArea"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      <!--  HTML/CSS個人製作課題  -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card-hover-wrapper h-100">
-          <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-lesson">
-            <img src="images/lesson.png" class="card-img-top img-fluid rounded-top-3" alt="Lesson Demo Pic">
-            <div class="card-body p-3 p-md-4 w-100">
-              <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
-              <h5 class="card-title fw-bold text-dark mb-3">HTML/CSS個人製作課題</h5>
-              <p>使用言語</p>
-              <div id="DesignHouseRenovationLangDetail" class="barCharaArea"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      <!--  PHP個人製作課題  -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card-hover-wrapper h-100">
-          <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3" data-bs-toggle="modal" data-bs-target="#modal-donuts">
-            <img src="images/donuts.png" class="card-img-top img-fluid rounded-top-3" alt="PHP Demo Pic">
-            <div class="card-body p-3 p-md-4 w-100">
-              <span class="badge bg-info-subtle text-info-emphasis fs-6 py-2 px-3 fw-semibold mb-3">デモHP</span>
-              <h5 class="card-title fw-bold text-dark mb-3">PHP個人製作課題 (C.C.Donuts)</h5>
-              <p>使用言語</p>
-              <div id="ccdonutsLangDetail" class="barCharaArea"></div>
+              <div id="langDetail" class="barCharaArea"></div>
             </div>
           </button>
         </div>
@@ -141,13 +66,12 @@
         <div class="row g-4 align-items-start">
           <div class="col-12 col-md-5">
             <img src="images/battle.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="RPG">
-            <div id="RPG" class="languageBar mt-2 mb-2"></div>
-            <div id="RPGLang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
+            <div id="repo" class="languageBar mt-2 mb-2"></div>
+            <div id="lang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
           </div>
           <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
             <div>
               <p class="mb-2"><strong>制作時間：</strong> 25h</p>
-              <p class="mb-2"><strong>対応端末：</strong> ※PCのみ動作</p>
               <p class="mb-2"><strong>制作概要：</strong> Javascript演習開始直後の自主制作ゲーム1。エンカウントと戦闘ロジックを実装 <small class="text-muted"><br>※制作補助としてAIを使用</small><br><small class="text-muted">※戦闘画面はAIでデザイン</small></p>
               <p class="mb-2"><strong>工夫した点：</strong><br>
                 <span class="text-danger fw-bold">戦闘画面を基礎的なJavascriptで記述後、STGのロジックを応用してキャラクターの移動とエンカウント判定に使用</span>
