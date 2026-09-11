@@ -22,14 +22,14 @@ $category=$title=$description=$dev_time='';
 
             <!-- リポジトリ名 -->
             <div class="mb-3 text-start">
-              <label class="form-label fw-bold small text-secondary">リポジトリ名</label>
-              <input type="text" name="title" class="form-control" placeholder="GitHubの対象リポジトリ名を入力">
+              <label class="form-label fw-bold small text-secondary">作品タイトル</label>
+              <input type="text" name="title" class="form-control" placeholder="作品タイトルを入力">
             </div>
 
             <!-- 説明文 -->
             <div class="mb-3 text-start">
-              <label class="form-label fw-bold small text-secondary">説明文</label>
-              <textarea name="description" class="form-control" rows="3" placeholder="モーダル内の説明文を入力">description</textarea>
+              <label class="form-label fw-bold small text-secondary">作品概要</label>
+              <textarea name="description" class="form-control" rows="3" placeholder="作品概要を入力">description</textarea>
             </div>
 
             <!-- 制作時間 -->

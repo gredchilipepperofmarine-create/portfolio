@@ -3,7 +3,8 @@ const stepConfirm = document.getElementById('stepConfirm');
 const btnToConfirm = document.getElementById('btnToConfirm');
 const btnBackToInput = document.getElementById('btnBackToInput');
 const workForm = document.getElementById('workForm');
-const currentData = document.getElementById('currentData');
+const currentTitle = document.getElementById('currentTitle');
+const mordalArea = document.getElementById('mordalArea');
 
 let repoDataBox = {}
 
@@ -59,9 +60,9 @@ confirmForm.addEventListener('submit', (e) => {
   })
   .then(data => {
     console.log(data);/*この状態だと配列 */
-    console.log(data[0].category);/*この状態だと個別*/
-    currentData.innerHTML = cardArea(data[0].title);
-    
+    console.log(data[0].description);/*この状態だと個別*/
+    currentTitle.innerHTML = cardArea(data[0].title);
+    mordalArea.innerHTML = mordalTimeDes(data[0].dev_time, data[0].description);
 
   
   })
@@ -69,49 +70,16 @@ confirmForm.addEventListener('submit', (e) => {
 })
 
 const cardArea = (title) => {
-  return `
-    <!-- 左側カラム -->
-    <div id="currentData" class="col-12 col-md-5 col-lg-4">
-      <div class="card-hover-wrapper h-100">
-        <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3 overflow-hidden" data-bs-toggle="modal" data-bs-target="#modal-rpg">
-          <img src="images/demoPicCat.png" class="card-img-top img-fluid rounded-top-3" alt="Demo Pic">
-          <div class="card-body p-3 p-md-4 w-100 bg-white">
-            <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3"></span>
-            <h5 class="card-title fw-bold text-dark mb-3">${title}</h5>
-            <p class="text-muted small mb-1">使用言語</p>
-            <div class="barCharaArea"></div>
-          </div>
-        </button>
-      </div>
-    </div>
-  `
+  return `<h5 class="card-title fw-bold text-dark mb-3">${title}</h5>`
 }
 
-const mordalArea = () => {
+const mordalTimeDes = (devTime, description) => {
   return `
-  <!-- モーダルエリア -->
-  <!-- DEMO -->
-  <div class="modal-header border-bottom-0 pb-0">
-    <h5 class="modal-title fw-bold">RPG Battle System</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-  </div>
-  <div class="modal-body p-4">
-    <div class="row g-4 align-items-start">
-      <div class="col-12 col-md-5">
-        <img src="" class="img-fluid rounded-3 w-100 shadow-sm" alt="Demo Pic">
-        <div class=" mt-2 mb-2"></div>
-        <div class=" row row-cols-2 g-2 m-0"></div>
-      </div>
-      <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
-        <div>
-          <p class="mb-2"><strong>制作時間：</strong> ${data[0].dev_time}h</p>
-          <p class="mb-2"><strong>対応端末：</strong> ※PCのみ動作</p>
-          <p class="mb-2"><strong>制作概要：</strong> ${data[0].description} <small class="text-muted"><br>※制作補助としてAIを使用</small><br><small class="text-muted">※戦闘画面はAIでデザイン</small></p>
-          <p class="mb-2"><strong>工夫した点：</strong><br>
-            <span class="text-danger fw-bold">戦闘画面を基礎的なJavascriptで記述後、STGのロジックを応用してキャラクターの移動とエンカウント判定に使用</span>
-          </p>
-        </div>
-      </div>
-    </div>
+      <p class="mb-2"><strong>制作時間：</strong> ${devTime}h</p>
+      <p class="mb-2"><strong>対応端末：</strong> ※PCのみ動作</p>
+      <p class="mb-2"><strong>制作概要：</strong> ${description}</p>
+      <p class="mb-2"><strong>工夫した点：</strong><br>
+        <span class="text-danger fw-bold">戦闘画面を基礎的なJavascriptで記述後、STGのロジックを応用してキャラクターの移動とエンカウント判定に使用</span>
+      </p>
   `
 }

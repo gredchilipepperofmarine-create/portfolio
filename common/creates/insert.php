@@ -7,7 +7,7 @@ $sql->execute([
   $_POST['description'],
   $_POST['dev_time']
 ]);
-$get_sql = $pdo->prepare('SELECT * FROM creates WHERE id = 1');
+$get_sql = $pdo->prepare('SELECT * FROM creates WHERE id = (SELECT MAX(id) FROM creates)');
 $get_sql->execute();
 $result = $get_sql->fetch(PDO::FETCH_ASSOC);
 echo json_encode([$result]);
