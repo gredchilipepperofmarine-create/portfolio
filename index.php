@@ -17,7 +17,7 @@ error_reporting(E_ALL);
     <script src="https://kit.fontawesome.com/93c8dbb3be.js" crossorigin="anonymous"></script>
     <link href="style/style.css" rel="stylesheet">
     <link href="common/createImages/createImages.css" rel="stylesheet">
-    <!-- <link href="common/loading/loading.css" rel="stylesheet"> -->
+    <link href="common/loading/loading.css" rel="stylesheet">
     <link href="common/progress/progress.css" rel="stylesheet">
     <link href="common/tub/tub.css" rel="stylesheet">
     <link href="common/ufo/ufo.css" rel="stylesheet">
@@ -187,7 +187,6 @@ error_reporting(E_ALL);
           <div id="creates"></div>
           <!-- TEST Area -->
           <?php require 'common/creates/get_main_creates.php'; ?>
-          <?php require 'common/getLang/getLang.php'; ?>
 
           <!-- TOPへ戻るボタン -->
           <div class="toTopArea">
@@ -226,7 +225,7 @@ error_reporting(E_ALL);
     <!-- <script src="script/script.js"></script> -->
     <script src="common/createImages/createImages.js"></script>
     <script src="common/toTopScroll/toTopScroll.js"></script>
-    <!-- <script src="common/loading/loading.js"></script> -->
+    <script src="common/loading/loading.js"></script>
     <script src="common/progress/progress.js"></script>
     <script src="common/tub/tub.js"></script>
     <script src="common/ufo/ufo.js"></script>
