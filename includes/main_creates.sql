@@ -2,7 +2,7 @@ CREATE TABLE main_creates (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `category` VARCHAR(20) NOT NULL,
   `title` VARCHAR(100) NOT NULL,
-  `repo_name` VARCHAR(20) NOT NULL,
+  `repo_name` VARCHAR(30) NOT NULL,
   `description` TEXT NOT NULL,
   `creativity` TEXT NOT NULL,
   `note1` TEXT,
@@ -20,4 +20,4 @@ INSERT INTO `main_creates`(`id`, `category`, `title`, `repo_name`, `description`
 (3,'デモHP', 'How To Drive?', 'HowToDrive', '演習開始直後の自主制作サイト', 'Web制作学習の初期段階で、基本タグのレイアウト検証用に制作', '※レスポンシブ未対応', '', '15', '../HowToDrive/index.html'),
 (4,'デモHP', '新作映画', 'Movie', '演習初期の自主制作サイト', '映画告知風のデザインと内容を0から作成。CSS装飾の練習として制作', '※レスポンシブ未対応', '', '15', '../movie/index.html'),
 (5,'デモHP', 'Design House Renovation', 'DesignHouseRenovation', 'HTML/CSS個人製作課題', 'Flexbox/Gridを用いたレスポンシブ配置と、カンプファイルに忠実なデザインの再現', '', '', '50', '../DesignHouseRenovation/index.html'),
-(6,'デモHP', 'C.C.Donuts', 'RPG', 'PHP個人製作課題', 'EC風ショッピングサイト機能の構築', '※制作補助としてAIを使用', '', '80', '../ccdonuts/index.php');
+(6,'デモHP', 'C.C.Donuts', 'ccdonuts', 'PHP個人製作課題', 'EC風ショッピングサイト機能の構築', '※制作補助としてAIを使用', '', '80', '../ccdonuts/index.php');

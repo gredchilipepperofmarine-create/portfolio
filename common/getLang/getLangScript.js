@@ -129,12 +129,12 @@ const getLang = (targetRepo) => {
   document.addEventListener('DOMContentLoaded', fetchLanguages);
 
 }
-// getLang('STG', 'STGLang', 'STGLangDetail');
-// getLang('HowToDrive', 'HowToDriveLang', 'HowToDriveLangDetail');
-getLang('STG');
-// getLang('DesignHouseRenovation', 'DesignHouseRenovationLang', 'DesignHouseRenovationLangDetail');
-// getLang('Movie', 'MovieLang', 'MovieLangDetail');
-// getLang('ccdonuts', 'ccdonutsLang', 'ccdonutsLangDetail');
+getLang('RPG');
+// getLang('STG');
+// getLang('HowToDrive');
+// getLang('movie');
+// getLang('DesignHouseRenovation');
+// getLang('ccdonuts');
 
 // document.addEventListener('focusin', () => {
 //   console.log('【フォーカス移動】現在の要素:', document.activeElement);
