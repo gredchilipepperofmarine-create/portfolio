@@ -80,7 +80,7 @@ $data_all = $sql->fetch();
           <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
             <div>
               <p class="mb-2"><strong>制作時間：</strong> <?= $data_all['dev_time'] ?>h</p>
-              <p class="mb-2"><strong>制作概要：</strong><?= $data_all['description'] ?><small class="text-muted"><br><?= $data_all['note'] ?></small>
+              <p class="mb-2"><strong>制作概要：</strong><?= $data_all['description'] ?><small class="text-muted"><br><?= $data_all['note1'] ?></small><br><?= $data_all['note2'] ?></small>
               <p class="mb-2"><strong>工夫した点：</strong><br>
                 <span class="text-danger fw-bold"><?= $data_all['creativity'] ?></span>
               </p>
