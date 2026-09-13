@@ -183,8 +183,8 @@ error_reporting(E_ALL);
           <!-- 入力モーダル -->
           <?php require 'common/creates/add_mordal.php'; ?>
 
-          <!-- 制作実績エリア -->
-          <div id="creates"></div>
+          <!-- 制作実績エリア
+          <div id="creates"></div> -->
 
           <!-- デザインエリア -->
           <div class="container text-center my-5">
@@ -192,10 +192,12 @@ error_reporting(E_ALL);
             <h2 class="fw-bold mb-4 text-dark">制作実績・ギャラリー</h2>
             <div class="outWrap p-4 p-md-5 bg-white bg-opacity-75 rounded-4 shadow-custom">
               <div class="row g-4 justify-content-center text-start">
-
-                <?php require 'common/creates/db_system.php'; ?>
+              <?php require 'common/creates/db_system.php'; ?>
                 
                 <!-- TEST Area -->
+                <!-- 制作実績エリア -->
+                <div id="creates"></div>
+                
                 <?php require 'common/creates/main_creates_output.php'; ?>
 
 
@@ -272,9 +274,10 @@ error_reporting(E_ALL);
     <script src="common/ufo/ufo.js"></script>
     <script src="common/form/form.js"></script>
     <script src="common/chart/skillChart.js"></script>
-    <script src="common/getLang/getLangScript.js"></script>
+    <!-- <script src="common/getLang/getLangScript.js"></script> -->
     <script src="common/modalFocusCtl/modalFocusCtl.js"></script>
     <script src="common/creates/creates.js"></script>
+    <script src="common/creates/main_creates.js"></script>
     
   </body>
 </html>
