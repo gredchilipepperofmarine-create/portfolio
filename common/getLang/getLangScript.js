@@ -73,19 +73,15 @@ const getLang = (targetRepo) => {
     const totalBytes = getArray.reduce(addBytes, 0);
 
     // 言語バー出力先
-    const languageBar = document.getElementById('repo');
+    const languageBar = document.getElementById(targetRepo);
     // バー補足情報出力先
-    const barCharaArea = document.getElementById('langDetail');
-    const langCharaArea = document.getElementById('lang');
-    // 必要なクラス名付与
-    languageBar.classList.add = targetRepo;
-    barCharaArea.classList.add = `${targetRepo}Lang`;
-    langCharaArea.classList.add = `${targetRepo}LangDetail`;
+    const barCharaArea = document.getElementById(`${targetRepo}LangDetail`);
+    const langCharaArea = document.getElementById(`${targetRepo}Lang`);
 
     // 中身を一度リセット
-    languageBar.innerHTML = '';
-    barCharaArea.innerHTML = '';
-    langCharaArea.innerHTML = '';
+    // languageBar.innerHTML = '';
+    // barCharaArea.innerHTML = '';
+    // langCharaArea.innerHTML = '';
 
     for(const[lang, bytes] of Object.entries(data)) {
       // .toFixed(1)は小数点第一位まで残して四捨五入
@@ -129,12 +125,12 @@ const getLang = (targetRepo) => {
   document.addEventListener('DOMContentLoaded', fetchLanguages);
 
 }
-getLang('RPG');
 // getLang('STG');
-// getLang('HowToDrive');
-// getLang('movie');
-// getLang('DesignHouseRenovation');
-// getLang('ccdonuts');
+// getLang('HowToDrive', 'HowToDriveLang', 'HowToDriveLangDetail');
+// getLang('RPG', 'RPGLang', 'RPGLangDetail');
+// getLang('DesignHouseRenovation', 'DesignHouseRenovationLang', 'DesignHouseRenovationLangDetail');
+// getLang('Movie', 'MovieLang', 'MovieLangDetail');
+// getLang('ccdonuts', 'ccdonutsLang', 'ccdonutsLangDetail');
 
 // document.addEventListener('focusin', () => {
 //   console.log('【フォーカス移動】現在の要素:', document.activeElement);

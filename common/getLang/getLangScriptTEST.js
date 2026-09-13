@@ -1,4 +1,4 @@
-const getLang = (targetRepo, targetLang, targetLangDetail) => {
+const getLang = (targetRepo) => {
 
   const githubUser = 'gredchilipepperofmarine-create';
   const repo = targetRepo;
@@ -73,10 +73,14 @@ const getLang = (targetRepo, targetLang, targetLangDetail) => {
     const totalBytes = getArray.reduce(addBytes, 0);
 
     // 言語バー出力先
-    const languageBar = document.getElementById(targetRepo);
+    const languageBar = document.getElementById('repo');
     // バー補足情報出力先
-    const barCharaArea = document.getElementById(targetLangDetail);
-    const langCharaArea = document.getElementById(targetLang);
+    const barCharaArea = document.getElementById('langDetail');
+    const langCharaArea = document.getElementById('lang');
+    // 必要なクラス名付与
+    languageBar.classList.add = targetRepo;
+    barCharaArea.classList.add = `${targetRepo}Lang`;
+    langCharaArea.classList.add = `${targetRepo}LangDetail`;
 
     // 中身を一度リセット
     languageBar.innerHTML = '';
@@ -125,12 +129,12 @@ const getLang = (targetRepo, targetLang, targetLangDetail) => {
   document.addEventListener('DOMContentLoaded', fetchLanguages);
 
 }
-getLang('STG', 'STGLang', 'STGLangDetail');
-getLang('HowToDrive', 'HowToDriveLang', 'HowToDriveLangDetail');
-getLang('RPG', 'RPGLang', 'RPGLangDetail');
-getLang('DesignHouseRenovation', 'DesignHouseRenovationLang', 'DesignHouseRenovationLangDetail');
-getLang('Movie', 'MovieLang', 'MovieLangDetail');
-getLang('ccdonuts', 'ccdonutsLang', 'ccdonutsLangDetail');
+// getLang('RPG');
+// getLang('STG');
+// getLang('HowToDrive');
+// getLang('movie');
+// getLang('DesignHouseRenovation');
+// getLang('ccdonuts');
 
 // document.addEventListener('focusin', () => {
 //   console.log('【フォーカス移動】現在の要素:', document.activeElement);

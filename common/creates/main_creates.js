@@ -19,7 +19,7 @@ fetch('common/creates/main_creates_output.php')
             <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">${create.category}</span>
             <h5 class="card-title fw-bold text-dark mb-3">${create.title}</h5>
             <p>使用言語</p>
-            <div id="langDetail" class="barCharaArea"></div>
+            <div id="${create.repo_name}LangDetail" class="barCharaArea"></div>
           </div>
         </button>
       </div>
@@ -38,8 +38,8 @@ fetch('common/creates/main_creates_output.php')
             <div class="row g-4 align-items-start">
               <div class="col-12 col-md-5">
                 <img src="images/${create.repo_name}.png" class="img-fluid rounded-3 w-100 shadow-sm" alt="RPG">
-                <div id="repo" class="languageBar mt-2 mb-2"></div>
-                <div id="lang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
+                <div id="${create.repo_name}" class="languageBar mt-2 mb-2"></div>
+                <div id="${create.repo_name}Lang" class="langCharaArea row row-cols-2 g-2 m-0"></div>
               </div>
               <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
                 <div>
@@ -56,7 +56,7 @@ fetch('common/creates/main_creates_output.php')
                     <span class="fw-bold">コードを見る</span>
                   </a>
                   <a href="${create.root_pass}" target="_blank" class="btn btn-primary rounded-3 px-3 py-2 flex-fill d-inline-flex align-items-center justify-content-center">
-                    作品をプレイする
+                    作品を見る
                   </a>
                   <button type="button" class="btn btn-secondary rounded-3 px-3 py-2 flex-fill" data-bs-dismiss="modal">
                     閉じる
@@ -73,4 +73,9 @@ fetch('common/creates/main_creates_output.php')
   modalList.forEach(modalEl => {
     bootstrap.Modal.getOrCreateInstance(modalEl);
   });
+  data.forEach(create => {
+    console.log(create.repo_name);
+    getLang(create.repo_name);
+  });
+  // getLang('STG');
 });

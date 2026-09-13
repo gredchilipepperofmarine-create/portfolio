@@ -270,7 +270,7 @@ error_reporting(E_ALL);
     <script src="common/ufo/ufo.js"></script>
     <script src="common/form/form.js"></script>
     <script src="common/chart/skillChart.js"></script>
-    <!-- <script src="common/getLang/getLangScript.js"></script> -->
+    <script src="common/getLang/getLangScript.js"></script>
     <script src="common/modalFocusCtl/modalFocusCtl.js"></script>
     <script src="common/creates/creates.js"></script>
     <script src="common/creates/main_creates.js"></script>
