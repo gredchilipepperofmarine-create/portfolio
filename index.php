@@ -192,15 +192,9 @@ error_reporting(E_ALL);
             <h2 class="fw-bold mb-4 text-dark">制作実績・ギャラリー</h2>
             <div class="outWrap p-4 p-md-5 bg-white bg-opacity-75 rounded-4 shadow-custom">
               <div class="row g-4 justify-content-center text-start">
-              <?php require 'common/creates/db_system.php'; ?>
-                
-                <!-- TEST Area -->
-                <!-- 制作実績エリア -->
-                <div id="creates"></div>
-                
-                <?php require 'common/creates/main_creates_output.php'; ?>
 
-
+                <?php require 'common/creates/db_system.php'; ?>
+                
                 <div class="p-2 mt-2 bg-light rounded-2">
                   <div class="techArea mb-1 d-flex align-items-center gap-1 fw-bold">
                     <span style="background: linear-gradient(transparent 65%, rgba(255, 220, 0, 0.6) 65%);">
@@ -227,10 +221,18 @@ error_reporting(E_ALL);
                 
 
               </div>
+              <div id="creates" class="row g-4 justify-content-center text-start"></div>
+            </div>
+          </div>
+
+          <!-- 制作実績エリア -->
+          <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div id="createsModal" class="modal-content text-start rounded-4 border-0 shadow-custom">
+              </div>
             </div>
           </div>
           
-
           <!-- TOPへ戻るボタン -->
           <div class="toTopArea">
             <div class="toTopInner">
