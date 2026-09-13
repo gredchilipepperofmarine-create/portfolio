@@ -77,11 +77,15 @@ const getLang = (targetRepo) => {
     // バー補足情報出力先
     const barCharaArea = document.getElementById(`${targetRepo}LangDetail`);
     const langCharaArea = document.getElementById(`${targetRepo}Lang`);
-
+    // 必要なクラス名付与
+    languageBar.classList.add = targetRepo;
+    barCharaArea.classList.add = `${targetRepo}Lang`;
+    langCharaArea.classList.add = `${targetRepo}LangDetail`;
+    
     // 中身を一度リセット
-    // languageBar.innerHTML = '';
-    // barCharaArea.innerHTML = '';
-    // langCharaArea.innerHTML = '';
+    languageBar.innerHTML = '';
+    barCharaArea.innerHTML = '';
+    langCharaArea.innerHTML = '';
 
     for(const[lang, bytes] of Object.entries(data)) {
       // .toFixed(1)は小数点第一位まで残して四捨五入
