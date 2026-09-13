@@ -188,7 +188,6 @@ error_reporting(E_ALL);
 
           <!-- デザインエリア -->
           <div class="container text-center my-5">
-            <!-- 一番大きなカード(outWrap)の直上にh2を配置 -->
             <h2 class="fw-bold mb-4 text-dark">制作実績・ギャラリー</h2>
             <div class="outWrap p-4 p-md-5 bg-white bg-opacity-75 rounded-4 shadow-custom">
               <div class="row g-4 justify-content-center text-start">
@@ -226,13 +225,8 @@ error_reporting(E_ALL);
           </div>
 
           <!-- 制作実績エリア -->
-          <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-              <div id="createsModal" class="modal-content text-start rounded-4 border-0 shadow-custom">
-              </div>
-            </div>
-          </div>
-          
+          <div id="createsModal"></div>
+
           <!-- TOPへ戻るボタン -->
           <div class="toTopArea">
             <div class="toTopInner">
