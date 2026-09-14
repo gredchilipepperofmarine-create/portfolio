@@ -76,11 +76,12 @@ const getLang = (targetRepo) => {
     const languageBar = document.getElementById(targetRepo);
     // バー補足情報出力先
     const barCharaArea = document.getElementById(`${targetRepo}LangDetail`);
+    console.log(barCharaArea);
     const langCharaArea = document.getElementById(`${targetRepo}Lang`);
     // 必要なクラス名付与
-    languageBar.classList.add = targetRepo;
-    barCharaArea.classList.add = `${targetRepo}Lang`;
-    langCharaArea.classList.add = `${targetRepo}LangDetail`;
+    // languageBar.classList.add = targetRepo;
+    // barCharaArea.classList.add = `${targetRepo}Lang`;
+    // langCharaArea.classList.add = `${targetRepo}LangDetail`;
     
     // 中身を一度リセット
     languageBar.innerHTML = '';
@@ -126,7 +127,9 @@ const getLang = (targetRepo) => {
     console.log(msg);
   }
 
-  document.addEventListener('DOMContentLoaded', fetchLanguages);
+  fetchLanguages();
+
+  // document.addEventListener('DOMContentLoaded', fetchLanguages);
 
 }
 // getLang('STG');

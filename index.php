@@ -151,7 +151,6 @@ error_reporting(E_ALL);
                   </div>
                   <p class="lh-sm mb-3 text-start fw-bold text-dark fs-6">
                     GitHub API連携でリポジトリ内の言語使用率(バイト数)を取得し、JavaScriptで自動計算してプログレスバー(作品詳細内)に表示。
-                    <br>※現在DB化作業のため一時停止中
                   </p>
                   <div class="bg-white border rounded-2 p-2 shadow-sm">
                     <div class="small fw-bold mb-1 border-bottom pb-1">

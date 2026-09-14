@@ -74,8 +74,6 @@ fetch('common/creates/main_creates_output.php')
     bootstrap.Modal.getOrCreateInstance(modalEl);
   });
   data.forEach(create => {
-    console.log(create.repo_name);
     getLang(create.repo_name);
   });
-  // getLang('STG');
 });
