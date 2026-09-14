@@ -29,6 +29,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+ul.skills {
+  padding: 0;
+}
 .techArea::before {
   display: inline-block;
   content: "";
@@ -204,10 +207,11 @@ ul.subList.open {
 }
 ul.skills {
   list-style: inside;
+  list-style: none;
 }
 ul.skills li {
   /* font-size: clamp(15px, 6vw, 20px); */
-  padding: 5px;
+  padding: 10px;
 }
 h2 {
   text-align: left;
