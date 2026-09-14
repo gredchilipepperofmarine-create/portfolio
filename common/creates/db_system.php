@@ -10,8 +10,8 @@
             
             <div class="mb-3">
               <p class="lh-lg mb-0">
-                PHP演習成果確認のため制作実績をDB管理にし(※現在変更作業中)、新たにDB登録体験として「さわれる仕組み」を構築。INSERTとSELECTを同時に行うことで最新情報を取得しリアルタイムに変更が反映されます。
-                <br><small class="text-muted">※１件のみ登録可能。以降は上書きされます</small>
+                PHP演習成果確認のため制作実績をDB管理にし(※現在変更作業中)、「DB登録体験/さわれる仕組み」を構築。DBへの追加と取得を同時に行うことで最新情報をリアルタイムに反映。
+                <br><small class="text-muted">※の場所に反映されます。</small>
               </p>
             </div>
 
@@ -33,7 +33,7 @@
 
           <!-- 下部メッセージ -->
           <div class="pt-3 mt-3 border-top text-start">
-            <small class="text-muted">※体験用のDBを使用。</small>
+            <!-- <small class="text-muted">※体験用のDBを使用。</small> -->
           </div>
         </div>
 
@@ -43,9 +43,10 @@
             <button type="button" class="btn text-start p-0 w-100 h-100 card border-0 shadow-custom card-hover-inner rounded-3 overflow-hidden" data-bs-toggle="modal" data-bs-target="#modal-demo">
               <img src="images/demoPicCat.png" class="card-img-top img-fluid rounded-top-3" alt="Demo Pic">
               <div class="card-body p-3 p-md-4 w-100 bg-white">
-                <span class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3"></span>
-                <h5  id="currentTitle" class="card-title fw-bold text-dark mb-3">Demo</h5>
+                <span id="demoCategory" class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">※カテゴリー</span>
+                <h5 class="card-title fw-bold text-dark mb-3 titleArea">※タイトル</h5>
                 <p class="text-muted small mb-1">使用言語</p>
+                <p>※使用言語比率は表示されません</p>
                 <div class="barCharaArea"></div>
               </div>
             </button>
@@ -65,7 +66,7 @@
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content text-start rounded-4 border-0 shadow-custom">
       <div class="modal-header border-bottom-0 pb-0">
-        <h5 class="modal-title fw-bold">Demo</h5>
+        <h5 class="modal-title fw-bold titleArea">※タイトル</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body p-4">
@@ -77,11 +78,11 @@
           </div>
           <div class="col-12 col-md-7 d-flex flex-column justify-content-between">
             <div id="mordalArea">
-              <p class="mb-2"><strong>制作時間：</strong> ※ここに「入力した制作時間」が反映されます</p>
-              <p class="mb-2"><strong>作品概要：</strong> ※ここに「入力した作品概要」が反映されます</p>
+              <p class="mb-2"><strong>制作時間：</strong> ※制作時間</p>
+              <p class="mb-2"><strong>作品概要：</strong> ※作品概要</p>
             </div>
             <hr class="my-3">
-            <small class="text-muted mb-2">※制作補助としてAIを使用</small>
+            <small class="text-muted mb-2">※閉じるボタン以外は使用できません</small>
             <div class="d-flex flex-column flex-sm-row flex-md-column flex-lg-row gap-2">
               <button type="button" target="_blank" rel="noopener noreferrer" class="btn btn-light border shadow-sm d-inline-flex align-items-center justify-content-center gap-2 rounded-3 px-3 py-2 flex-fill text-dark text-decoration-none">
                 <img src="images/GitHub_Invertocat_Black.png" alt="GitHub Logo" style="height: 20px; width: auto;">

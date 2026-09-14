@@ -80,13 +80,13 @@
 
                     <!-- リポジトリ名 -->
                     <div class="mb-3 border-bottom pb-2">
-                      <div class="text-secondary small fw-bold mb-1">リポジトリ名</div>
+                      <div class="text-secondary small fw-bold mb-1">作品タイトル</div>
                       <div id="confirmTitle" class="fw-semibold text-dark fs-6"></div>
                     </div>
 
                     <!-- 説明文 -->
                     <div class="mb-3 border-bottom pb-2">
-                      <div class="text-secondary small fw-bold mb-1">説明文</div>
+                      <div class="text-secondary small fw-bold mb-1">作品概要</div>
                       <div id="confirmDescription" class="text-dark fs-6 text-break lh-sm"></div>
                     </div>
 

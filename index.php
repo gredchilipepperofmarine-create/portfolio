@@ -125,60 +125,9 @@ error_reporting(E_ALL);
               </div>
             </div>
           </div>
-          <div class="container text-center" id="technotes">
-            <div class="row">
-              <div class="col-12 tubArea">
-                <h2 class="techArea">Tech Notes</h2>
-                <div class="listArea">
-                  <ul class="tubs">
-                    <li><button type="button" class="tubBtn isOpen" data-btn=".note1">Note1</button></li>
-                    <li><button type="button" class="tubBtn" data-btn=".cssArea">Note2</button></li>
-                    <li><button type="button" class="tubBtn" data-btn=".jsArea">Note3</button></li>
-                    <li><button type="button" class="tubBtn" data-btn=".phpArea">Note4</button></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-12 tub note1">
-                <div class="tubInner">
-                  <ul class="skills">
-                    <li>Bootstrapを使用してベース作成</li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-12 tub cssArea isHide">
-                <div class="tubInner">
-                  <ul class="skills">
-                    <li>フッターエリアのアニメーションと</li>
-                    <li>その他装飾で活用</li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-12 tub jsArea isHide">
-                <div class="tubInner">
-                  <ul class="skills">
-                    <li>ローディング画面</li>
-                    <li>背景画像の自動生成</li>
-                    <li>トップへ戻るボタンの発生制御</li>
-                    <li>タブの作成</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-12 tub phpArea isHide">
-                <div class="tubInner">
-                  <ul class="skills">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li>PHP</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <!-- タブエリア -->
+          <?php require 'common/tub/tub.php'; ?>
 
           <!-- 入力モーダル -->
           <?php require 'common/creates/add_mordal.php'; ?>
@@ -194,7 +143,7 @@ error_reporting(E_ALL);
 
                 <?php require 'common/creates/db_system.php'; ?>
                 
-                <div class="p-2 mt-2 bg-light rounded-2">
+                <div class="p-3 mt-2 bg-light rounded-2">
                   <div class="techArea mb-1 d-flex align-items-center gap-1 fw-bold">
                     <span style="background: linear-gradient(transparent 65%, rgba(255, 220, 0, 0.6) 65%);">
                       Tech Note
@@ -202,6 +151,7 @@ error_reporting(E_ALL);
                   </div>
                   <p class="lh-sm mb-3 text-start fw-bold text-dark fs-6">
                     GitHub API連携でリポジトリ内の言語使用率(バイト数)を取得し、JavaScriptで自動計算してプログレスバー(作品詳細内)に表示。
+                    <br>※現在DB化作業のため一時停止中
                   </p>
                   <div class="bg-white border rounded-2 p-2 shadow-sm">
                     <div class="small fw-bold mb-1 border-bottom pb-1">
@@ -220,7 +170,7 @@ error_reporting(E_ALL);
                 
 
               </div>
-              <div id="creates" class="row g-4 justify-content-center text-start"></div>
+              <div id="creates" class="row g-5 justify-content-center text-start"></div>
             </div>
           </div>
 

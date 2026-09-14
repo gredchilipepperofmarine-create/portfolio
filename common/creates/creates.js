@@ -3,8 +3,9 @@ const stepConfirm = document.getElementById('stepConfirm');
 const btnToConfirm = document.getElementById('btnToConfirm');
 const btnBackToInput = document.getElementById('btnBackToInput');
 const workForm = document.getElementById('workForm');
-const currentTitle = document.getElementById('currentTitle');
+const titleArea = document.querySelectorAll('.titleArea');
 const mordalArea = document.getElementById('mordalArea');
+const demoCategory = document.getElementById('demoCategory');
 
 let repoDataBox = {}
 
@@ -61,13 +62,19 @@ confirmForm.addEventListener('submit', (e) => {
   .then(data => {
     console.log(data);/*この状態だと配列 */
     console.log(data[0].description);/*この状態だと個別*/
-    currentTitle.innerHTML = cardArea(data[0].title);
     mordalArea.innerHTML = mordalTimeDes(data[0].dev_time, data[0].description);
+    titleArea.forEach(target => {
+      target.innerHTML = cardArea(data[0].title);
+    })
+    demoCategory.outerHTML = categoryArea(data[0].category);
 
-  
   })
   
 })
+
+const categoryArea = (category) => {
+  return `<span id="demoCategory" class="badge bg-secondary-subtle text-secondary-emphasis fs-6 py-2 px-3 fw-semibold mb-3">${category}</span>`
+}
 
 const cardArea = (title) => {
   return `<h5 class="card-title fw-bold text-dark mb-3">${title}</h5>`
